@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог товаров</title>
+  </head>
+  <body>
+  	<header class="main-header">
+		<div class="container">
+			<div class="header-logo">
+			  <img src="img/header-logo.png" width="205" height="55" alt="Барбершоп «Бородинский»">
+			</div>
+			<nav class="main-navigation">
+			  <ul>
+				<li>
+				  <a href="#">Каталог</a>
+				</li>
+				<li>
+				  <a href="#">Доставка и оплата</a>
+				</li>
+				<li>
+				  <a href="#">О Компании</a>
+				</li>
+			  </ul>
+			</nav>
+			<div class="user-block">
+				<a class="search"></a>
+				<a class="login" href="#">Вход</a>
+				<a class="basket" href="#">2 товара</a>
+			</div>
+			<div class="timework-tel">
+				<span class="timework">С 10 до 20, ежедневно</span><br>
+				<span class="tel">8 812 450-25-25</span>
+			</div>
+		</div>
+	</header>
+	<div class="breadcrumbs">
+		<ul>
+			<li>
+				<a href="#">Главная</a>
+			</li>
+			<li>
+				<a href="#">Каталог</a>
+			</li>
+			<li>
+				<a href="#">Сливочное</a>
+			</li>
+		</ul>
+	</div>
+	<div class="selection-ice">
+		<form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
+			<label for="sorting">Сортировка</label>
+			<select name="sorting">
+                <option selected>по популярности</option>
+                <option>другое</option>
+            </select>
+			<label for="rucount">Цена: 100 руб. - 500 руб.</label>
+				<br>
+				<input type="range" id="rucount" name="rucount" min="25" max="800" step="25">
+				<output name="ruoutput"></output>
+				<br>
+			<span>Жирность:</span>
+			<label>
+				<input type="radio" name="check-0" value="0">0%
+			</label>
+			<label>
+				<input type="radio" name="check-10" value="10" checked>до 10%
+			</label>
+			<label>
+				<input type="radio" name="check-30" value="30">до 30%
+			</label>
+			<label>
+				<input type="radio" name="check-all" value="50">выше 30%
+			</label>
+				<br>
+			<span>Наполнители:</span>
+			<br>
+			<label>
+				<input type="checkbox" name="chek-choko" checked>шоколадные
+			</label>
+			<label>
+				<input type="checkbox" name="chek-sugar" checked>сахарные присыпки
+			</label>
+			<label>
+				<input type="checkbox" name="chek-choko">фрукты
+			</label>
+			<label>
+				<input type="checkbox" name="chek-choko">сиропы
+			</label>
+			<label>
+				<input type="checkbox" name="chek-choko">джемы
+			</label>
+			<a href="#">Применить</a>
+		</form>
+	</div>
+	<div class="goods">
+		<div class="catalog">
+			<div class="case-catalog">
+				<img src="#" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="200" height="50">
+				<b>310 <!--Как знак рубля ставить?--> / кг</b>
+				<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<div>
+				<a href="#" class="fastsee">Быстрый просмотр</a>
+				</div>
+			</div>
+			<div class="case-catalog">
+				<img src="#" alt="Сливочно-кофейное с кусочками шоколада" width="200" height="50">
+				<b>380 <!--Как знак рубля ставить?--> / кг</b>
+				<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+				<div>
+				<a href="#" class="fastsee">Быстрый просмотр</a>
+				</div>
+			</div>
+			<div class="case-catalog">
+				<img src="#" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="200" height="50">
+				<b>355 <!--Как знак рубля ставить?--> / кг</b>
+				<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+				<div>
+				<a href="#" class="fastsee">Быстрый просмотр</a>
+				</div>
+			</div>
+			<div class="case-catalog">
+				<img src="#" alt="Сливочное крем-брюле с карамельной подливкой" width="200" height="50">
+				<b>415 <!--Как знак рубля ставить?--> / кг</b>
+				<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+				<div>
+				<a href="#" class="fastsee">Быстрый просмотр</a>
+				</div>
+			</div>
+			<div class="case-catalog">
+				<img src="#" alt="Сливочное с брусничным джемом" width="200" height="50">
+				<b>325 <!--Как знак рубля ставить?--> / кг</b>
+				<a href="#">Сливочное с брусничным джемом</a>
+				<div>
+				<a href="#" class="fastsee">Быстрый просмотр</a>
+				</div>
+			</div>
+			<div class="case-catalog">
+				<img src="#" alt="Сливочно-черничное с цельными ягодами черники" width="200" height="50">
+				<b>410 <!--Как знак рубля ставить?--> / кг</b>
+				<a href="#">Сливочно-черничное с цельными ягодами черники</a>
+				<div>
+				<a href="#" class="fastsee">Быстрый просмотр</a>
+				</div>
+			</div>
+			<div class="case-catalog">
+				<img src="#" alt="Сливочно-лимонное с карамельной присыпкой" width="200" height="50">
+				<b>375 <!--Как знак рубля ставить?--> / кг</b>
+				<a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+				<div>
+				<a href="#" class="fastsee">Быстрый просмотр</a>
+				</div>
+			</div>
+			<div class="case-catalog">
+				<img src="#" alt="Сливочное с шоколадной стружкой" width="200" height="50">
+				<b>320 <!--Как знак рубля ставить?--> / кг</b>
+				<a href="#">Сливочное с шоколадной стружкой</a>
+				<div>
+				<a href="#" class="fastsee">Быстрый просмотр</a>
+				</div>
+			</div>
+			<div class="case-catalog">
+				<img src="#" alt="Сливочно-ванильное с кусочками шоколада" width="200" height="50">
+				<b>440 <!--Как знак рубля ставить?--> / кг</b>
+				<a href="#">Сливочно-ванильное с кусочками шоколада</a>
+				<div>
+				<a href="#" class="fastsee">Быстрый просмотр</a>
+				</div>
+			</div>
+			<div class="case-catalog">
+				<img src="#" alt="Сливочное с ментоловым сиропом" width="200" height="50">
+				<b>435 <!--Как знак рубля ставить?--> / кг</b>
+				<a href="#">Сливочное с ментоловым сиропом</a>
+				<div>
+				<a href="#" class="fastsee">Быстрый просмотр</a>
+				</div>
+			</div>
+			<div class="case-catalog">
+				<img src="#" alt="Сливочное с кусочками черного шоколада" width="200" height="50">
+				<b>355 <!--Как знак рубля ставить?--> / кг</b>
+				<a href="#">Сливочное с кусочками черного шоколада</a>
+				<div>
+				<a href="#" class="fastsee">Быстрый просмотр</a>
+				</div>
+			</div>
+			<div class="case-catalog">
+				<img src="#" alt="Сливочное с мятным сиропом" width="200" height="50">
+				<b>420 <!--Как знак рубля ставить?--> / кг</b>
+				<a href="#">Сливочное с мятным сиропом</a>
+				<div>
+				<a href="#" class="fastsee">Быстрый просмотр</a>
+				</div>
+			</div>
+		</div>
+		<div class="catalog-pages">
+			<ul>
+				<li><a href"#">1</a></li>
+				<li><a href"#">2</a></li>
+				<li><a href"#">3</a></li>
+				<li><a href"#">4</a></li>
+				<li><a href"#">5</a></li>
+			</ul>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<section class="footer-social">
+				<a class="social-btn social-btn-inst" href="#">Иконка какой соц сети?</a>
+				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+			</section>
+			<section class="footer-contacts">
+				<ul>
+					<li><a href="#">Для поставщиков</a></li>
+					<li><a href="#">О производстве</a></li>
+					<li><a href="#">Наши документы</a></li>
+					<li><a href="#">Экологические стандарты</a></li>
+				</ul>
+			</section>
+			<section class="footer-copyright">
+				<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+				<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
+			</section>
+		</div>
+	</footer>
+  </body>
+</html>
