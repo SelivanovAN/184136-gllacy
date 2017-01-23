@@ -24,7 +24,7 @@
 			  </ul>
 			</nav>
 			<div class="user-block">
-				<a class="search"></a>
+				<a class="search" href="#"></a>
 				<a class="login" href="#">Вход</a>
 				<a class="basket" href="#">Пусто</a>
 			</div>
@@ -34,57 +34,67 @@
 			</div>
 		</div>
 	</header>
-	<article class="">
+	<div class="ad"><!--advertising реклама-->
 		<div class="choice-ice">
 			<h2>Крем-брюле и пломбир с малиновым джемом</h2>
 		</div>
-		<div class="page-choice"><!--Скорее это радио кнопки?-->
-			<a href"#">1</a>
-			<a href"#">2</a>
-			<a href"#">3</a>
+		<div class="page-choice">
+			<form>
+				<input type="radio" name="check-1" value="1"> <!--label радио кнопкам надо или нет?-->
+				<input type="radio" name="check-2" value="2">
+				<input type="radio" name="check-3" value="3">
+			</form>
 		</div>
 		<div class="agitation">
-			<span>Давайте оба!</span>
+			<a href="#">Давайте оба!</a>
 		</div>
-	</article>
-	<article class="promo-action">
-		<div class="promo-action-1">
+	</div>
+	<div class="promo">
+		<div class="promo-action">
 			<b>Малинка даром!</b>
 			<p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+			<a href="#">Хочу варенье!</a>
 		</div>
-		<div class="promo-action-2">
+		<div class="promo-action">
 			<b>Шоколадки даром!</b>
 			<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+			<a href="#">Хочу шоколадки!</a>
 		</div>
-	</article>
-	<div class="content">
-		<section class="content-1">
+	</div>
+	<div class="catalog">
+		<section class="catalog-ice">
 			<span class="tag">ХИТ</span>
 			<b>310 <!--Какой символ рубля?-->/кг</b>
 			<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p><!--Это ссылка скорее?-->
 		</section>	
-		<section class="content-2">
-		<span class="tag">ХИТ</span>
+		<section class="catalog-ice">
+		<span class="tag">ХИТ</span> <!--tag бирка, ярлык, признак, этикетка, ушко, наконечник-->
 			<b>318 <!--Какой символ рубля?-->/кг</b>
 			<p>Сливочно-кофейное с кусочками шоколада</p><!--Это ссылка скорее?-->
 		</section>
-		<section class="content-3">
+		<section class="catalog-ice">
 			<span class="tag">ХИТ</span>
 			<b>355 <!--Какой символ рубля?-->/кг</b>
 			<p>Сливочно-клубничное с присыпкой из белого шоколада</p><!--Это ссылка скорее?-->
 		</section>
-		<section class="content-4">
+		<section class="catalog-ice">
 			<span class="tag">ХИТ</span>
 			<b>415 <!--Какой символ рубля?-->/кг</b>
 			<p>Сливочное крем-брюле с карамельной подливкой</p><!--Это ссылка скорее?-->
 		</section>
-	<div>
+	</div>
 	<div class="description">
-		<span>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</span>
-		<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-		<p>Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-		<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-		<p>Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+		<div class="about">
+			<span>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</span>
+		</div>
+		<div class="make">
+			<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+			<p>Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+		</div>
+		<div class="delivery"> <!--delivery доставка-->
+			<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+			<p>Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+		</div>
 	</div>
 	<div class="news-sub">
 		<section class="news">
@@ -93,8 +103,10 @@
 		</section>
 		<section class="news">
 			<p>Новое в нашем блоке</p>
-			<input type="Text" name="email" placeholder="Электронная почта">
-			<input type="submit" name="submit" value="Отправить">
+			<form>
+				<input type="Text" name="email" placeholder="Электронная почта">
+				<button name="send">Отправить</button>
+			</form>
 		</section>
 	</div>
 	<div class="driving-address">
@@ -112,7 +124,7 @@
 	<footer>
 		<div class="container">
 			<section class="footer-social">
-				<a class="social-btn social-btn-inst" href="#">Иконка какой соц сети?</a>
+				<a class="social-btn social-btn-inst" href="#">Твиттер</a>
 				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
 				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
 				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
@@ -127,7 +139,7 @@
 			</section>
 			<section class="footer-copyright">
 				<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-				<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a><!--Как символ вставить?-->2016</p>
+				<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
 			</section>
 		</div>
 	</footer>
