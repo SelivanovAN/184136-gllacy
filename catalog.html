@@ -8,12 +8,12 @@
   <body>
 	<!--Блок шапки-->
   	<header class="main-header">
-		<div class="container">
+		<div class="container clearfix">
 			<div class="header-logo">
 			  <img src="img/logo.png" width="205" height="55" alt="Глейси">
 			</div>
 			<nav class="main-navigation">
-			  <ul class="main-navigation">
+			  <ul class="main-nav">
 				<li>
 				  <a href="#">Каталог</a>
 				</li>
@@ -26,7 +26,7 @@
 			  </ul>
 			</nav>
 			<div class="user-block">
-				<a class="search"></a>
+				<a class="search">Поиск</a>
 				<a class="login" href="#">Вход</a>
 				<a class="basket" href="#">2 товара</a>
 			</div>
@@ -51,7 +51,7 @@
 		</ul>
 	</div>
 	<div class="selection-ice">
-		<form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
+		<form action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
 			<h2>Сливочное мороженное</h2>
 			<label for="sorting">Сортировка</label>
 			<select name="sorting">
