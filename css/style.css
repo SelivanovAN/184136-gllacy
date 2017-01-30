@@ -160,7 +160,9 @@ body {
 .case-catalog:nth-child(5) {
 	margin-left: 0;
 }
-.case-catalog:nth-child(even) {
+.case-catalog:nth-child(4),
+.case-catalog:nth-child(8),
+.case-catalog:nth-child(12) {
 	margin-right: 0;
 }
 .case-catalog img {
