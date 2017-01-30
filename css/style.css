@@ -131,23 +131,23 @@ body {
 	background-image: url("../img/promo_choko.jpg");
 	background-repeat: no-repeat;
 }
-.catalog-ice {
+.catalog .catalog-ice {
 	float: left;
 	width: 267px;
-	height: 322;
+	height: 322px;
 	margin-right: 26px;
 	margin-top: 40px;
 }
-.catalog-ice:last-child {
+.catalog .catalog-ice:last-child {
 	margin-right: 0;
 }
-.catalog-ice img {
+.catalog .catalog-ice img {
 	border-radius: 135px;
 }
-.case-catalog  {
+.goods .case-catalog  {
 	float: left;
 	width: 267px;
-	height: 322;
+	height: 322px;
 	margin-right: 26px;
 	margin-top: 40px;
 }
@@ -157,20 +157,20 @@ body {
 	color: #ffffff;
 	font-family: "Roboto Medium", "Tahoma", "Arial", sans-serif;
 }
-.case-catalog:nth-child(4),
-.case-catalog:nth-child(8),
-.case-catalog:nth-child(12) {
+.goods .case-catalog:nth-child(4),
+.goods .case-catalog:nth-child(8),
+.goods .case-catalog:nth-child(12) {
 	margin-right: 0;
 }
-.case-catalog img {
+.goods .case-catalog img {
 	border-radius: 135px;
 }
-.catalog-pages {
+.goods .catalog-pages {
 	float: right;
 	margin-bottom: 50px;
 	margin-top: 82px;
 }
-.catalog-pages li {
+.goods .catalog-pages li {
 	display: inline;
 	margin-right: 10px;
 }
@@ -178,6 +178,7 @@ body {
 	height: 306px;
 	background-image: url("../img/wafer.jpg");
 	background-repeat: no-repeat;
+	margin-top: 40px;
 }
 .about {
 		margin-top: 30px;
