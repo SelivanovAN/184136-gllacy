@@ -144,12 +144,6 @@ body {
 .catalog-ice img {
 	border-radius: 135px;
 }
-.catalog .case-catalog a {
-	font-size: 16px;
-	line-height: 22px;
-	color: #ffffff;
-	font-family: "Roboto Medium", "Tahoma", "Arial", sans-serif;
-}
 .case-catalog  {
 	float: left;
 	width: 267px;
@@ -157,8 +151,11 @@ body {
 	margin-right: 26px;
 	margin-top: 40px;
 }
-.case-catalog:nth-child(5) {
-	margin-left: 0;
+.catalog .case-catalog a {
+	font-size: 16px;
+	line-height: 22px;
+	color: #ffffff;
+	font-family: "Roboto Medium", "Tahoma", "Arial", sans-serif;
 }
 .case-catalog:nth-child(4),
 .case-catalog:nth-child(8),
@@ -169,7 +166,7 @@ body {
 	border-radius: 135px;
 }
 .catalog-pages {
-	float: left;
+	float: right;
 	margin-bottom: 50px;
 }
 .catalog-pages li {
