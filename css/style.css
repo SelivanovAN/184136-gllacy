@@ -150,7 +150,30 @@ body {
 	color: #ffffff;
 	font-family: "Roboto Medium", "Tahoma", "Arial", sans-serif;
 }
-
+.case-catalog  {
+	float: left;
+	width: 267px;
+	height: 322;
+	margin-right: 26px;
+	margin-top: 40px;
+}
+.case-catalog:nth-child(5) {
+	margin-left: 0;
+}
+.case-catalog:nth-child(even) {
+	margin-right: 0;
+}
+.case-catalog img {
+	border-radius: 135px;
+}
+.catalog-pages {
+	float: left;
+	margin-bottom: 50px;
+}
+.catalog-pages li {
+	display: inline;
+	margin-right: 10px;
+}
 .description {
 	height: 306px;
 	background-image: url("../img/wafer.jpg");
