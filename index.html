@@ -8,12 +8,12 @@
   <body>
 	<!--Блок шапки-->
 	<header class="main-header">
-		<div class="container">
+		<div class="container clearfix">
 			<div class="header-logo">
 			  <img src="img/logo.png" width="205" height="55" alt="Барбершоп «Бородинский»">
 			</div>
 			<nav class="main-navigation">
-			  <ul class="main-navigation">
+			  <ul class="main-nav">
 				<li>
 				  <a href="#">Каталог</a>
 				</li>
@@ -26,7 +26,7 @@
 			  </ul>
 			</nav>
 			<div class="user-block">
-				<a class="search" href="#"></a>
+				<a class="search" href="#">Поиск</a>
 				<a class="login" href="#">Вход</a>
 				<a class="basket" href="#">Пусто</a>
 			</div>
@@ -35,24 +35,36 @@
 				<span class="tel">8 812 450-25-25</span>
 			</div>
 		</div>
-	</header>
 	<!--/Блок шапки-->
-	<div class="ad"><!--advertising реклама-->
+	</header>
+	<main class="container">
+	<div class="ad clearfix"><!--advertising реклама-->
 		<div class="choice-ice">
 			<h2>Крем-брюле и пломбир с малиновым джемом</h2>
 		</div>
 		<div class="page-choice">
-			<form>
-				<input type="radio" name="check-1" value="1"> <!--label радио кнопкам надо или нет?-->
-				<input type="radio" name="check-2" value="2">
-				<input type="radio" name="check-3" value="3">
-			</form>
-		</div>
+				<input type="radio" id="btn-1" name="check-1" value="1"> <!--label радио кнопкам надо или нет?-->
+				<input type="radio" id="btn-2" name="check-2" value="2">
+				<input type="radio" id="btn-3" name="check-3" value="3">
+					<div class="slider-controls">
+						<label for="btn-1"></label>
+						<label for="btn-2"></label>
+						<label for="btn-3"></label>
+					</div>
+					 <div class="slider-inner">
+						<div class="slider-slides">
+							<img src="img/advertising_1.png" alt="...">
+							<img src="img/advertising_2.png" alt="...">
+							<img src="img/advertising_3.png" alt="...">
+						</div>
+					</div>
+         </div>
 		<div class="agitation">
 			<a href="#">Давайте оба!</a>
 		</div>
 	</div>
-	<div class="promo">
+	<!--Блок промо акции-->
+	<div class="promo clearfix">
 		<div class="promo-action">
 			<b>Малинка даром!</b>
 			<p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -63,8 +75,10 @@
 			<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 			<a href="#">Хочу шоколадки!</a>
 		</div>
+	<!--/Блок промо акции-->
 	</div>
-	<div class="catalog">
+	<!--Блок самых покупаемых мороженных-->
+	<div class="catalog clearfix">
 		<section class="catalog-ice">
 			<span class="tag">ХИТ</span>
 			<img src="img/ice_1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -89,8 +103,10 @@
 			<b>415 <!--Какой символ рубля?-->/кг</b>
 			<p>Сливочное крем-брюле с карамельной подливкой</p><!--Это ссылка скорее?-->
 		</section>
+	<!--/Блок самых покупаемых мороженных-->
 	</div>
-	<div class="description">
+	<!--Блок описания компании-->
+	<div class="description clearfix">
 		<div class="about">
 			<span>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</span>
 		</div>
@@ -102,8 +118,10 @@
 			<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
 			<p>Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
 		</div>
+	<!--/Блок описания компании-->
 	</div>
-	<div class="news-sub">
+	<!--Блок новостей и подписка на рассылку-->
+	<div class="news-sub clearfix">
 		<section class="news">
 			<p>Новое в нашем блоке</p>
 			<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -115,8 +133,11 @@
 				<button name="send">Отправить</button>
 			</form>
 		</section>
+	<!--/Блок новостей и подписка на рассылку-->
 	</div>
-	<div class="driving-address" >
+	</main>
+	<!--Блок проезда-адреса-->
+	<div class="driving-address">	
 		<section class="driving">
           Адрес главного офиса и<br>
 		  Офлайн магазина<br>
@@ -127,18 +148,20 @@
 		  (с 10 до 20 ежедневно)<br>
           <a href="#">Форма обратной связи</a>
 		</section>
+	<!--/Блок проезда-адреса-->	
 	</div>
+	
 	<!--Блок подвала-->
 	<footer>
-		<div class="container">
+		<div class="container clearfix">
 			<section class="footer-social">
-				<a class="social-btn social-btn-inst" href="#">Твиттер</a>
+				<a class="social-btn social-btn-tv" href="#">Твиттер</a>
 				<a class="social-btn social-btn-inst" href="https://instagram.com">Инстаграм</a>
 				<a class="social-btn social-btn-vk" href="https://vk.com">Вконтакте</a>
 				<a class="social-btn social-btn-fb" href="https://facebook.com">Фейсбук</a>
 			</section>
 			<section class="footer-contacts">
-				<ul>
+				<ul class="footer-main">
 					<li><a href="#">Для поставщиков</a></li>
 					<li><a href="#">О производстве</a></li>
 					<li><a href="#">Наши документы</a></li>

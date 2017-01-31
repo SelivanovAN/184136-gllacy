@@ -8,12 +8,12 @@
   <body>
 	<!--Блок шапки-->
   	<header class="main-header">
-		<div class="container">
+		<div class="container clearfix">
 			<div class="header-logo">
 			  <img src="img/logo.png" width="205" height="55" alt="Глейси">
 			</div>
 			<nav class="main-navigation">
-			  <ul class="main-navigation">
+			  <ul class="main-nav">
 				<li>
 				  <a href="#">Каталог</a>
 				</li>
@@ -26,7 +26,7 @@
 			  </ul>
 			</nav>
 			<div class="user-block">
-				<a class="search"></a>
+				<a class="search" href="#">Поиск</a>
 				<a class="login" href="#">Вход</a>
 				<a class="basket" href="#">2 товара</a>
 			</div>
@@ -35,10 +35,12 @@
 				<span class="tel">8 812 450-25-25</span>
 			</div>
 		</div>
-	</header>
 	<!--Блок шапки-->
+	</header>
+	<main class="container">
+	<!--Блок хлебных крошек-->
 	<div class="breadcrumbs">
-		<ul>
+		<ul class="bread-main-nav">
 			<li>
 				<a href="#">Главная</a>
 			</li>
@@ -49,9 +51,11 @@
 				<a href="#">Сливочное</a>
 			</li>
 		</ul>
+	<!--/Блок хлебных крошек-->
 	</div>
+	<!--Блок выбора мороженных - фильтр-->
 	<div class="selection-ice">
-		<form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
+		<form action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
 			<h2>Сливочное мороженное</h2>
 			<label for="sorting">Сортировка</label>
 			<select name="sorting">
@@ -96,9 +100,10 @@
 			</label>
 			<a href="#">Применить</a>
 		</form>
+	<!--/Блок выбора мороженных-->
 	</div>
-	<div class="goods">
-		<div class="catalog">
+	<!--Блок ассортимента мороженных-->
+	<div class="goods clearfix">
 			<div class="case-catalog">
 				<img src="img/ice_1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 				<b>310 <!--Как знак рубля ставить?--> / кг</b>
@@ -195,28 +200,29 @@
 				<a href="#" class="fastsee">Быстрый просмотр</a>
 				</div>
 			</div>
-		</div>
-		<div class="catalog-pages">
-			<ul>
-				<li><a href"#">1</a></li>
-				<li><a href"#">2</a></li>
-				<li><a href"#">3</a></li>
-				<li><a href"#">4</a></li>
-				<li><a href"#">5</a></li>
-			</ul>
-		</div>
+			<div class="catalog-pages">
+				<ul>
+					<li><a href"#">1</a></li>
+					<li><a href"#">2</a></li>
+					<li><a href"#">3</a></li>
+					<li><a href"#">4</a></li>
+					<li><a href"#">5</a></li>
+				</ul>
+			</div>
+	<!--/Блок ассортимента мороженных-->
 	</div>
+	</main>
 	<!--Блок подвала-->
 	<footer>
-		<div class="container">
+		<div class="container clearfix">
 			<section class="footer-social">
-				<a class="social-btn social-btn-inst" href="#">Твиттер</a>
+				<a class="social-btn social-btn-tv" href="#">Твиттер</a>
 				<a class="social-btn social-btn-inst" href="https://instagram.com">Инстаграм</a>
 				<a class="social-btn social-btn-vk" href="https://vk.com">Вконтакте</a>
 				<a class="social-btn social-btn-fb" href="https://facebook.com">Фейсбук</a>
 			</section>
 			<section class="footer-contacts">
-				<ul>
+				<ul class="footer-main">
 					<li><a href="#">Для поставщиков</a></li>
 					<li><a href="#">О производстве</a></li>
 					<li><a href="#">Наши документы</a></li>
