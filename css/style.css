@@ -1,8 +1,10 @@
 body {
-	width: 1200px;
+	min-width: 1200px;
 	font-size: 16px;
 	line-height: 22px;
 	color: #ffffff;
+	/*margin: 0;
+	padding: 0;*/
 	font-weight: normal;
 	font-family: "Roboto Medium", "Tahoma", "Arial", sans-serif;
 	background-color: #849d8f;
@@ -33,6 +35,19 @@ body {
 	display: inline;
 }
 .main-nav  a {	
+	font-size: 16px;
+	color: #ffffff;
+	line-height: 18px;
+	font-style: "Roboto Bold", "Tahoma", "Arial", sans-serif;
+}
+.bread-main-nav {
+    list-style: none;
+	padding: 0;
+}
+.bread-main-nav  li {
+	display: inline;
+}
+.bread-main-nav  a {	
 	font-size: 16px;
 	color: #ffffff;
 	line-height: 18px;
@@ -171,7 +186,7 @@ body {
 }
 .goods .catalog-pages li {
 	display: inline;
-	margin-right: 21px;
+	margin-right: 10px;
 }
 .description {
 	width: 1146px;
@@ -179,7 +194,7 @@ body {
 	background-image: url("../img/wafer.jpg");
 	background-repeat: no-repeat;
 	margin-top: 40px;
-	margin-left: 27px;
+	/*margin-left: 27px;*/
 }
 .description .about {
 	margin-top: 30px;
@@ -246,14 +261,18 @@ body {
 	font-family: "Roboto Medium", "Tahoma", "Arial", sans-serif;
 }
 .driving-address {
-	width: 1200px;
+	/*float: left;*/
+	/*min-width: 1200px;*/
 	min-height: 430px;
+	margin-left: 27px;
+	/*padding-left: 0;*/
 	background-image: url("../img/map.jpg");
 	/*background-image: url("../marker.png");*/
 	background-repeat: no-repeat;
 	margin-top: 40px;
 }
-.driving {
+
+.driving-address .driving {
 	background-color: white;
 	position: relative;
     right: -870px;

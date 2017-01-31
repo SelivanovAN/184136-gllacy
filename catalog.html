@@ -7,7 +7,7 @@
   </head>
   <body>
 	<!--Блок шапки-->
-  	<header class="main-header container">
+  	<header class="main-header">
 		<div class="container clearfix">
 			<div class="header-logo">
 			  <img src="img/logo.png" width="205" height="55" alt="Глейси">
@@ -26,7 +26,7 @@
 			  </ul>
 			</nav>
 			<div class="user-block">
-				<a class="search">Поиск</a>
+				<a class="search" href="#">Поиск</a>
 				<a class="login" href="#">Вход</a>
 				<a class="basket" href="#">2 товара</a>
 			</div>
@@ -39,8 +39,8 @@
 	</header>
 	<main class="container">
 	<!--Блок хлебных крошек-->
-	<div class="breadcrumbs container">
-		<ul class="main-nav">
+	<div class="breadcrumbs">
+		<ul class="bread-main-nav">
 			<li>
 				<a href="#">Главная</a>
 			</li>
@@ -54,7 +54,7 @@
 	<!--/Блок хлебных крошек-->
 	</div>
 	<!--Блок выбора мороженных - фильтр-->
-	<div class="selection-ice container">
+	<div class="selection-ice">
 		<form action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
 			<h2>Сливочное мороженное</h2>
 			<label for="sorting">Сортировка</label>
@@ -103,7 +103,7 @@
 	<!--/Блок выбора мороженных-->
 	</div>
 	<!--Блок ассортимента мороженных-->
-	<div class="goods container clearfix">
+	<div class="goods clearfix">
 			<div class="case-catalog">
 				<img src="img/ice_1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 				<b>310 <!--Как знак рубля ставить?--> / кг</b>
@@ -213,7 +213,7 @@
 	</div>
 	</main>
 	<!--Блок подвала-->
-	<footer class="container">
+	<footer>
 		<div class="container clearfix">
 			<section class="footer-social">
 				<a class="social-btn social-btn-tv" href="#">Твиттер</a>
