@@ -3,8 +3,6 @@ body {
 	font-size: 16px;
 	line-height: 22px;
 	color: #ffffff;
-	/*margin: 0;
-	padding: 0;*/
 	font-weight: normal;
 	font-family: "Roboto Medium", "Tahoma", "Arial", sans-serif;
 	background-color: #849d8f;
@@ -64,12 +62,6 @@ body {
 .timework-tel {
 	float: right;
 	width: 165px;
-}
-.ad {
-	/*float: center;*/
-	/*width: 1045px;*/
-	/*height: 651px;*/
-	/*background-image: url("../img/advertising_1.png");*/
 }
 .slider-inner {
 	overflow: hidden;
@@ -194,20 +186,23 @@ body {
 	background-image: url("../img/wafer.jpg");
 	background-repeat: no-repeat;
 	margin-top: 40px;
+	border-radius: 15px;
 	/*margin-left: 27px;*/
 }
 .description .about {
 	margin-top: 30px;
+	padding-left: 21px;
+	padding-right: 30px;
 }
 .description .make {
 	float: left;
 	width: 476px;
-	height: 171px;
+	height: 188px;
 }
 .description .delivery {
 	float: right;
 	width: 470px;
-	height: 148px;
+	height: 188px;
 }
 .description .about span {
 	font-size: 24px;
@@ -222,15 +217,21 @@ body {
 	color: #323232;
 	font-family: "Roboto Regular", "Tahoma", "Arial", sans-serif;
 }
+.news-sub {
+	width: 1146px;
+	height: 220px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: 0;
+}
 .news-sub .news {
 	float: left;
 	width: 560px;
 	height: 220px;
-	margin-left: 0;
 	margin-right: 26px;
-	padding-left: 0;
-	margin-top: 40px;
-	font-size: 0;
+	/*padding-left: 0;*/
+	/*font-size: 0;*/
+	border-radius: 15px;
 	background-image: url("../img/news.jpg");
 	background-repeat: no-repeat;
 }
@@ -251,8 +252,8 @@ body {
 	float: right;
 	width: 560px;
 	height: 220px;
-	margin-top: 40px;
 	background-image: url("../img/sub.jpg");
+	border-radius: 15px;
 }
 .news-sub .sub p {
 	font-size: 16px;
@@ -261,33 +262,34 @@ body {
 	font-family: "Roboto Medium", "Tahoma", "Arial", sans-serif;
 }
 .driving-address {
-	/*float: left;*/
 	/*min-width: 1200px;*/
 	min-height: 430px;
-	margin-left: 27px;
-	/*padding-left: 0;*/
+	margin-left: 23.5px;
+	margin-right: 23.5px;
+	margin-bottom: 19px;
 	background-image: url("../img/map.jpg");
-	/*background-image: url("../marker.png");*/
 	background-repeat: no-repeat;
-	margin-top: 40px;
+	/*background-position: 27px 0px;*/
 }
-
 .driving-address .driving {
-	background-color: white;
-	position: relative;
-    right: -870px;
-    top: 62px;
-    width: 302px;
+	/*opacity: 0.7;*/
+	display: inline-block;
+	width: 302px;
 	height: 305px;
+	background-color: white;
+	border-radius: 10px;
+	position: relative;
+    left: 870px;
+    bottom: -62px;
+    
 }
-
 .driving-address .driving {
 	color: #323232;
 }
 .footer-social {
 	float: left;
 	width: 185px;
-	margin-top: 36px;
+	/*margin-top: 36px;*/
 }
 .social-btn {
 	display: inline;
@@ -295,7 +297,7 @@ body {
 .footer-contacts {
 	float: left;
 	width: 326px;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 }
 .footer-main {
 	list-style: none;
@@ -309,7 +311,7 @@ body {
 .footer-copyright {
 	float: right;
 	width: 188px;
-	margin-top: 19px;
+	/*margin-top: 19px;*/
 }
 .footer-copyright p {
 	font-size: 12px;
