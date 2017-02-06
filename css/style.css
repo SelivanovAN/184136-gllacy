@@ -1,10 +1,10 @@
 body {
-	/*min-width: 1200px;*/
+	min-width: 1200px;
 	font-size: 16px;
 	line-height: 22px;
 	color: #ffffff;
-	font-weight: normal;
-	font-family: "Roboto Medium", "Tahoma", "Arial", sans-serif;
+	font-weight: 400;
+	font-family: "Roboto", sans-serif;
 	background-color: #849d8f;
 }
 .clearfix {
@@ -17,52 +17,264 @@ body {
 	margin: 0 auto;
 	padding: 0 27px;
 }
+/*--ШАПКА--*/
 .header-logo {
 	float: left;
 	width: 153px;
-	height: 64px;
+	min-height: 64px;
+	margin: 0;
+	margin-right: 11px;
 }
 .main-navigation {
 	float: left;
-	width: 349px;
+	width: 370px;
+	min-height: 64px;
 }
 .main-nav {
-    list-style: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	min-height: 64px;
+	font-size: 0;
+	/*margin-right: 326px;*/
+	
 }
 .main-nav  li {
-	display: inline;
+	display: inline-block;
+	vertical-align: top;
+	
 }
-.main-nav  a {	
+.main-nav  li a {	
+	display: block;
+	padding: 7px 14px;
+	margin-top: 14px;
 	font-size: 16px;
-	color: #ffffff;
 	line-height: 18px;
-	font-style: "Roboto Bold", "Tahoma", "Arial", sans-serif;
+	font-weight: 700;
+	color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	text-decoration: none;
+	border-bottom: 1px solid #ffffff ;
 }
+.main-nav  li:last-child a {
+	padding-right: 0;
+	padding-left: 15px;
+}
+.main-nav li:first-child a {
+	background: #d07058;
+	border-radius: 16px;
+	border-bottom: none;
+}
+.main-nav li:first-child a:hover {
+	background-color: #ffffff;
+	color: #000000;
+	border-radius: 20px;
+}
+.user-block {
+	float: right;
+	max-width: 328px;
+}
+.user-block .search,
+.user-block .login,
+.user-block .basket {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	margin-top: 11px;
+	padding: 11px 0px;
+	text-decoration: none;
+	vertical-align: top;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+	color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	vertical-align: top;	
+}
+/* Задаем фон кнопка шапки но не понятно как прозрачно только фону сделать
+.user-block .login {
+	background: #ffffff;
+	border-radius: 16px;
+	/*opacity: 0.2;
+}*/
+.user-block .search {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.user-block .login {
+	padding-left: 44px;
+	padding-right: 17px;
+}
+.user-block .basket {
+	padding-left: 45px;
+	padding-right: 34px;
+}
+
+
+/*-- ПОИСК --*/
+.user-block .search {
+	font-size: 0;
+}
+.user-block .search::after {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 8px;
+	width: 33px;
+	height: 33px;
+	background: transparent url("../img/loupe.png") no-repeat;
+	/*opacity: 1;*/
+}
+.user-block .search:hover::after {
+	background: transparent url("../img/search_black.png") no-repeat;
+	/*opacity: 0.2;*/
+}
+.user-block .search:hover {
+	background-color: #ffffff;
+	border-radius: 16px;
+}
+
+/*-- ВХОД --*/
+.user-block .login::after {
+	content: "";
+	position: absolute;
+	top: 9px;
+	left: 16px;
+	width: 21px;
+	height: 19px;
+	background: transparent url("../img/to_in.png") no-repeat;
+	/*opacity: 1;*/
+}
+.user-block .login:hover::after {
+	background: transparent url("../img/to_in_black.png") no-repeat;
+	/*opacity: 0.2;*/
+}
+.user-block .login:hover {
+	background-color: #ffffff;
+	border-radius: 16px;
+	color: #000000;
+}
+
+/*-- КОРЗИНА --*/
+.user-block .basket::after {
+	content: "";
+	position: absolute;
+	top: 9px;
+	left: 16px;
+	width: 21px;
+	height: 19px;
+	background: transparent url("../img/basket_empty.png") no-repeat;
+	opacity: 1;
+}
+.user-block .basket:hover::after {
+	background: transparent url("../img/basket_full.png") no-repeat;
+	opacity: 1;
+}
+.user-block .basket:hover {
+	background-color: #ffffff;
+	border-radius: 16px;
+	color: #000000;
+}
+/*
+.user-blok .login {
+	background-color: #ffffff;
+	opacity: 0.2;
+}*/
+/*
+.login:hover  {
+	background-color: #242424;
+}*/
+
+/*-- ВРЕМЯ --*
+
+/* Почему не флотится на строку ниже???????
+.timework-tel {
+	float: left;
+	width: 165px;
+}*/
+
+.timework-tel .timework {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 700;
+	color: #ffffff;
+	font-family: "Roboto", sans-serif;
+}
+.timework-tel .tel {
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #ffffff;
+	font-family: "Roboto", sans-serif;
+}
+/*-- /ШАПКА --*/
+
+
+/*-- БЛОК ХЛЕБНЫХ КРОШЕК--*/
 .bread-main-nav {
     list-style: none;
 	padding: 0;
+	margin: 0;
+	margin-top: 16px;
 }
 .bread-main-nav  li {
-	display: inline;
+	display: inline-block;
 }
-.bread-main-nav  a {	
+.bread-main-nav  li a {	
+	display: block;
+	font-size: 14px;
+	line-height: 16px;
+	color: #ffffff;
+	font-weight: 400;
+	font-family: "Roboto", sans-serif;
+	text-decoration: none;
+}
+.bread-main-nav  li:last-child a {
+	text-decoration: none;
+}
+
+/*-- /БЛОК ХЛЕБНЫХ КРОШЕК--*/
+
+.selection-ice h2 {
+	font-size: 35px;
+	line-height: 41px;
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Roboto", sans-serif;
+}
+.selection-ice .choice {
+	font-size: 14px;
+	line-height: 16px;
+	color: #ffffff;
+	font-weight: 500;
+	font-family: "Roboto", sans-serif;
+}
+.selection-ice .meaning {
 	font-size: 16px;
-	color: #ffffff;
 	line-height: 18px;
-	font-style: "Roboto Bold", "Tahoma", "Arial", sans-serif;
-}
-.user-block {
-	float: left;
-	width: 261px;
-}
-.user-block  a {
-	display: inline;
 	color: #ffffff;
+	font-weight: 500;
+	font-family: "Roboto", sans-serif;
 }
-.timework-tel {
-	float: right;
-	width: 165px;
+.selection-ice .btn-apply {
+	display: inline-block;
+	padding: 7px 27px;
+	text-decoration: none;
+	border: 2px solid #ffffff;
+	border-radius: 20px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+	font-weight: 500;
+	font-family: "Roboto", sans-serif;
+	background-image: #ffffff; /* не работает почему?*/
+	/*opacity: 0.2;*/
+	/*position: relative;*/
+
 }
+/*-- ГЛАВНАЯ СТРАНИЦА --*/
+	/*-- СЛАЙДЕР --*/
 .slider-inner {
 	overflow: hidden;
 }
@@ -111,13 +323,6 @@ body {
 	font-weight: bold;
 	font-family: "Roboto Bold", "Arial", sans-serif;
 }
-.selection-ice h2 {
-	font-size: 35px;
-	line-height: 41px;
-	color: #ffffff;
-	font-weight: bold;
-	font-family: "Roboto Bold", "Arial", sans-serif;
-}
 .promo-action {
 	float: left;
 	width: 560px;
@@ -150,36 +355,7 @@ body {
 .catalog .catalog-ice img {
 	border-radius: 135px;
 }
-.goods .case-catalog  {
-	float: left;
-	width: 267px;
-	height: 322px;
-	margin-right: 26px;
-	margin-top: 40px;
-}
-.goods .case-catalog a {
-	font-size: 16px;
-	line-height: 22px;
-	color: #ffffff;
-	font-family: "Roboto Medium", "Tahoma", "Arial", sans-serif;
-}
-.goods .case-catalog:nth-child(4),
-.goods .case-catalog:nth-child(8),
-.goods .case-catalog:nth-child(12) {
-	margin-right: 0;
-}
-.goods .case-catalog img {
-	border-radius: 135px;
-}
-.goods .catalog-pages {
-	float: right;/*
-	margin-bottom: 50px;*/
-	margin-top: 82px;
-}
-.goods .catalog-pages li {
-	display: inline;
-	margin-right: 10px;
-}
+
 .description {
 	width: 1146px;
 	height: 306px;
@@ -286,40 +462,228 @@ body {
 .driving-address .driving {
 	color: #323232;
 }
+
+/*-- /ГЛАВНАЯ СТРАНИЦА --*/
+
+
+/*-- СТРАНИЦА КАТАЛОГА МОРОЖЕННОГО --*/
+.goods .case-catalog  {
+	float: left;
+	width: 267px;
+	height: 322px;
+	margin-right: 26px;
+	margin-top: 40px;
+	text-align: center;
+	/*vertical-align: top;*/
+}
+.goods .cost {
+	position: relative;
+	left: -20px;
+	bottom: 60px;
+	float: left;
+	width: 154px;
+	height: 45px;
+	/*left: 0;*/
+	margin: 0;
+	padding: 0;
+	font-size: 32px;
+	line-height: 45px;
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Roboto", sans-serif;
+	cursor: pointer;
+}
+.goods .specification {
+	position: relative;
+	bottom: 35px;
+	float: left;
+	/*width: 154px;*/
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 22px;
+	color: #ffffff;
+	font-weight: 500;
+	font-family: "Roboto", sans-serif;
+	/*text-decoration: none;*/
+}
+.goods .btn-show-catalog {
+	position: relative;
+	Float: left;
+	
+	width: 168px;
+	height: 25px;
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Roboto", sans-serif;
+	text-decoration: none;
+	padding: 0 18px;
+}
+
+.goods .case-catalog:nth-child(4),
+.goods .case-catalog:nth-child(8),
+.goods .case-catalog:nth-child(12) {
+	margin-right: 0;
+}
+.goods .case-catalog img {
+	border-radius: 135px;
+}
+.goods .catalog-pages {
+	float: right;/*
+	margin-bottom: 50px;*/
+	margin-top: 82px;
+}
+
+.goods .catalog-pages li {
+	display: inline-block;
+	margin-right: 10px;
+}
+.goods .catalog-pages li a {	
+	display: block;
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+	font-weight: 500;
+	font-family: "Roboto", sans-serif;
+	text-decoration: none;
+}
+/*-- /СТРАНИЦА КАТАЛОГА МОРОЖЕННОГО --*/
+
+
+/*-- ПОДВАЛ --*/
+
+	/*-- СОЦИАЛЬНЫЕ КНОПКИ --*/
 .footer-social {
 	float: left;
 	width: 185px;
 	/*margin-top: 36px;*/
+	text-align: center;
+	/*font-size: 0;*/
 }
 .social-btn {
-	display: inline;
+	display: inline-block;
+	width: 37px;
+	height: 37px;
+	margin: 0;
+	/*margin-right: 11px;*/
+	font-size: 0;
+	vertical-align: top;
+	text-decoration: none;
+	border-radius: 26px;
 }
+.social-btn-tv {
+	background:  transparent url("../img/tv.png") no-repeat center;
+}
+.social-btn-inst {
+	background:  transparent url("../img/ins.png") no-repeat center;
+}
+.social-btn-vk {
+	background:  transparent url("../img/vk.png") no-repeat center;
+}
+.social-btn-fb {
+	background:  transparent url("../img/f.png") no-repeat center;
+}
+
+	/*-- КОНТАКТЫ --*/
 .footer-contacts {
 	float: left;
 	width: 326px;
-	/*margin-top: 20px;*/
+	margin-left: 210px;
+	text-align: left;
 }
 .footer-main {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 .footer-main li {
-	display: inline;
+	display: inline-block;
+	margin: 0;
+	padding: 0px;
+	/*padding-left: 22px;
+	margin-right: 20px;*/
+	vertical-align: top;
 }
-.footer-main a {
+.footer-main li a {
+	position: relative;
+	display: block;
+	/*padding-right: 10px;*/
+	padding-left: 22px;
+	/*margin-right: 10px;*/
+	font-size: 13px;
+	line-height: 18px;
 	color: #ffffff;
+	font-weight: 400;
+	font-family: "Roboto", sans-serif;
+	text-decoration: none;
 }
+.footer-main li:nth-child(2)  a  {
+	padding-right: 0px;
+	padding-left: 20px;
+	margin-right: 0;
+}
+.footer-main li:last-child  a {
+	padding-right: 0px;
+	padding-left: 32px;
+	margin-right: 0;
+}
+ .footer-main .heart::before {
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 0px;
+	width: 15px;
+	height: 13px;
+	background: transparent url("../img/heart.png") no-repeat;
+	/*opacity: 1;*/
+}
+	/*-- КОПИРАЙТ --*/
 .footer-copyright {
 	float: right;
-	width: 188px;
+	width: 220px;
+	margin: 0;
+	padding: 0;
 	/*margin-top: 19px;*/
+}
+.footer-copyright .btn-copyright {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 10px 55px;
+	text-align: left;
+	font-size: 0;
+	line-height: 18px;
+	color: #ffffff;
+	font-weight: 400;
+	font-family: "Roboto", sans-serif;
+	text-decoration: none;
+}
+.footer-copyright .btn-copyright::after {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 108px;
+	height: 38px;
+	background: transparent url("../img/made_footer.png") no-repeat;
+	/*opacity: 1;*/
 }
 .footer-copyright p {
 	font-size: 12px;
-	line-height: 16px;
-	color: #fefefe;
-	font-family: "Roboto Regular", "Tahoma", "Arial", sans-serif;
+	line-height: 18px;
+	color: #ffffff;
+	font-weight: 400;
+	font-family: "Roboto", sans-serif;
+	/*text-decoration: none;*/
 }
 .footer-copyright a {
+	font-size: 12;
+	line-height: 18px;
 	color: #ffffff;
-	text-decoration: none;
+	font-weight: 400;
+	font-family: "Roboto", sans-serif;
+	/*text-decoration: none;*/
 }

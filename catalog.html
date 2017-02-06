@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог товаров</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
@@ -10,19 +12,13 @@
   	<header class="main-header">
 		<div class="container clearfix">
 			<div class="header-logo">
-			  <img src="img/logo.png" width="154" height="64" alt="Логотип Глейси">
+			  <a href="#"><img src="img/logo.png" width="154" height="64" alt="Логотип Глейси"></a>
 			</div>
 			<nav class="main-navigation">
 			  <ul class="main-nav">
-				<li>
-				  <a href="#">Каталог</a>
-				</li>
-				<li>
-				  <a href="#">Доставка и оплата</a>
-				</li>
-				<li>
-				  <a href="#">О Компании</a>
-				</li>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Доставка и оплата</a></li>
+				<li><a href="#">О Компании</a></li>
 			  </ul>
 			</nav>
 			<div class="user-block">
@@ -42,15 +38,9 @@
 	<!--Блок хлебных крошек-->
 	<div class="breadcrumbs">
 		<ul class="bread-main-nav">
-			<li>
-				<a href="#">Главная</a>
-			</li>
-			<li>
-				<a href="#">Каталог</a>
-			</li>
-			<li>
-				<a href="#">Сливочное</a>
-			</li>
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">Каталог</a></li>
+			<li><a href="#">Сливочное</a></li>
 		</ul>
 	<!--/Блок хлебных крошек-->
 	</div>
@@ -58,48 +48,30 @@
 	<div class="selection-ice">
 		<form action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
 			<h2>Сливочное мороженное</h2>
-			<label for="sorting">Сортировка</label>
+			<label class="choice" for="sorting">Сортировка</label>
 			<select name="sorting">
                 <option selected>по популярности</option>
                 <option>другое</option>
             </select>
-			<label for="rucount">Цена: 100 руб. - 500 руб.</label>
+			<label class="choice" for="rucount">Цена: 100 руб. - 500 руб.</label>
 				<br>
 				<input type="range" id="rucount" name="rucount" min="25" max="800" step="25">
 				<output name="ruoutput"></output>
 				<br>
-			<span>Жирность:</span>
-			<label>
-				<input type="radio" name="check-0" value="0">0%
-			</label>
-			<label>
-				<input type="radio" name="check-10" value="10" checked>до 10%
-			</label>
-			<label>
-				<input type="radio" name="check-30" value="30">до 30%
-			</label>
-			<label>
-				<input type="radio" name="check-all" value="50">выше 30%
-			</label>
+			<span class="choice">Жирность:</span>
+			<label class="meaning"><input type="radio" name="check-0" value="0">0%</label>
+			<label class="meaning"><input type="radio" name="check-10" value="10" checked>до 10%</label>
+			<label class="meaning"><input type="radio" name="check-30" value="30">до 30%</label>
+			<label class="meaning"><input type="radio" name="check-all" value="50">выше 30%</label>
 				<br>
-			<span>Наполнители:</span>
+			<span class="choice">Наполнители:</span>
 			<br>
-			<label>
-				<input type="checkbox" name="chek-choko" checked>шоколадные
-			</label>
-			<label>
-				<input type="checkbox" name="chek-sugar" checked>сахарные присыпки
-			</label>
-			<label>
-				<input type="checkbox" name="chek-choko">фрукты
-			</label>
-			<label>
-				<input type="checkbox" name="chek-choko">сиропы
-			</label>
-			<label>
-				<input type="checkbox" name="chek-choko">джемы
-			</label>
-			<a href="#">Применить</a>
+			<label class="meaning"><input type="checkbox" name="chek-choko" checked>шоколадные</label>
+			<label class="meaning"><input type="checkbox" name="chek-sugar" checked>сахарные присыпки</label>
+			<label class="meaning"input type="checkbox" name="chek-choko">фрукты</label>
+			<label class="meaning"><input type="checkbox" name="chek-choko">сиропы</label>
+			<label class="meaning"><input type="checkbox" name="chek-choko">джемы</label>
+			<a class="btn-apply" href="#">Применить</a>
 		</form>
 	<!--/Блок выбора мороженных-->
 	</div>
@@ -107,100 +79,98 @@
 	<div class="goods clearfix">
 			<div class="case-catalog">
 				<img src="img/ice_1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-				<b>310 <!--Как знак рубля ставить?--> / кг</b>
-				<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				<span class="cost">310 <!--Как знак рубля ставить?--> / кг</span>
+				<a class="specification" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 				<div>
-				<a href="#" class="fastsee">Быстрый просмотр</a>
+				<a class="btn-show-catalog" href="#" class="fastsee">Быстрый просмотр</a>
 				</div>
 			</div>
 			<div class="case-catalog">
 				<img src="img/ice_2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-				<b>380 <!--Как знак рубля ставить?--> / кг</b>
-				<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+				<span class="cost">380 <!--Как знак рубля ставить?--> / кг</span>
+				<a class="specification" href="#">Сливочно-кофейное с кусочками шоколада</a>
 				<div>
-				<a href="#" class="fastsee">Быстрый просмотр</a>
+				<a class="btn-show-catalog" href="#" class="fastsee">Быстрый просмотр</a>
 				</div>
 			</div>
 			<div class="case-catalog">
 				<img src="img/ice_3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-				<b>355 <!--Как знак рубля ставить?--> / кг</b>
-				<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+				<span class="cost">355 <!--Как знак рубля ставить?--> / кг</span>
+				<a class="specification" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 				<div>
-				<a href="#" class="fastsee">Быстрый просмотр</a>
+				<a class="btn-show-catalog" href="#" class="fastsee">Быстрый просмотр</a>
 				</div>
 			</div>
 			<div class="case-catalog">
 				<img src="img/ice_4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-				<b>415 <!--Как знак рубля ставить?--> / кг</b>
-				<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+				<span class="cost">415 <!--Как знак рубля ставить?--> / кг</span>
+				<a class="specification" href="#">Сливочное крем-брюле с карамельной подливкой</a>
 				<div>
-				<a href="#" class="fastsee">Быстрый просмотр</a>
+				<a class="btn-show-catalog" href="#" class="fastsee">Быстрый просмотр</a>
 				</div>
 			</div>
 			<div class="case-catalog">
 				<img src="img/ice_5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
-				<b>325 <!--Как знак рубля ставить?--> / кг</b>
-				<a href="#">Сливочное с брусничным джемом</a>
+				<span class="cost">325 <!--Как знак рубля ставить?--> / кг</span>
+				<a class="specification" href="#">Сливочное с брусничным джемом</a>
 				<div>
-				<a href="#" class="fastsee">Быстрый просмотр</a>
+				<a class="btn-show-catalog" href="#" class="fastsee">Быстрый просмотр</a>
 				</div>
 			</div>
 			<div class="case-catalog">
 				<img src="img/ice_6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
-				<b>410 <!--Как знак рубля ставить?--> / кг</b>
-				<a href="#">Сливочно-черничное с цельными ягодами черники</a>
+				<span class="cost">410 <!--Как знак рубля ставить?--> / кг</span>
+				<a class="specification" href="#">Сливочно-черничное с цельными ягодами черники</a>
 				<div>
-				<a href="#" class="fastsee">Быстрый просмотр</a>
+				<a class="btn-show-catalog" href="#" class="fastsee">Быстрый просмотр</a>
 				</div>
 			</div>
 			<div class="case-catalog">
 				<img src="img/ice_7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
-				<b>375 <!--Как знак рубля ставить?--> / кг</b>
-				<a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+				<span class="cost">375 <!--Как знак рубля ставить?--> / кг</span>
+				<a class="specification" href="#">Сливочно-лимонное с карамельной присыпкой</a>
 				<div>
-				<a href="#" class="fastsee">Быстрый просмотр</a>
+				<a class="btn-show-catalog" class="specification" href="#" class="fastsee">Быстрый просмотр</a>
 				</div>
 			</div>
 			<div class="case-catalog">
 				<img src="img/ice_8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
-				<b>320 <!--Как знак рубля ставить?--> / кг</b>
-				<a href="#">Сливочное с шоколадной стружкой</a>
+				<span class="cost">320 <!--Как знак рубля ставить?--> / кг</span>
+				<a class="specification" href="#">Сливочное с шоколадной стружкой</a>
 				<div>
-				<a href="#" class="fastsee">Быстрый просмотр</a>
+				<a class="btn-show-catalog" href="#" class="fastsee">Быстрый просмотр</a>
 				</div>
 			</div>
 			<div class="case-catalog">
 				<img src="img/ice_9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
-				<b>440 <!--Как знак рубля ставить?--> / кг</b>
-				<a href="#">Сливочно-ванильное с кусочками шоколада</a>
+				<span class="cost">440 <!--Как знак рубля ставить?--> / кг</span>
+				<a class="specification" href="#">Сливочно-ванильное с кусочками шоколада</a>
 				<div>
-				<a href="#" class="fastsee">Быстрый просмотр</a>
+				<a class="btn-show-catalog" href="#" class="fastsee">Быстрый просмотр</a>
 				</div>
 			</div>
 			<div class="case-catalog">
 				<img src="img/ice_10.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
-				<b>435 <!--Как знак рубля ставить?--> / кг</b>
-				<a href="#">Сливочное с ментоловым сиропом</a>
+				<span class="cost">435 <!--Как знак рубля ставить?--> / кг</span>
+				<a class="specification" href="#">Сливочное с ментоловым сиропом</a>
 				<div>
-				<a href="#" class="fastsee">Быстрый просмотр</a>
+				<a class="btn-show-catalog" href="#" class="fastsee">Быстрый просмотр</a>
 				</div>
 			</div>
 			<div class="case-catalog">
 				<img src="img/ice_11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
-				<b>355 <!--Как знак рубля ставить?--> / кг</b>
-				<a href="#">Сливочное с кусочками черного шоколада</a>
+				<span class="cost">355 <!--Как знак рубля ставить?--> / кг</span>
+				<a class="specification" href="#">Сливочное с кусочками черного шоколада</a>
 				<div>
-				<a href="#" class="fastsee">Быстрый просмотр</a>
+				<a class="btn-show-catalog" href="#" class="fastsee">Быстрый просмотр</a>
 				</div>
-			</div>
-			<div>
 			</div>
 			<div class="case-catalog">
 				<img src="img/ice_12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
-				<b>420 <!--Как знак рубля ставить?--> / кг</b>
-				<a href="#">Сливочное с мятным сиропом</a>
+				<span class="cost">420 <!--Как знак рубля ставить?--> / кг</span>
+				<a class="specification" href="#">Сливочное с мятным сиропом</a>
 				<div>
-				<a href="#" class="fastsee">Быстрый просмотр</a>
+				<a class="btn-show-catalog" href="#" class="fastsee">Быстрый просмотр</a>
 				</div>
 			</div>
 			<div class="catalog-pages">
@@ -227,14 +197,14 @@
 			</section>
 			<section class="footer-contacts">
 				<ul class="footer-main">
-					<li><a href="#">Для поставщиков</a></li>
-					<li><a href="#">О производстве</a></li>
+					<li><a class="heart" href="#">Для поставщиков</a></li>
 					<li><a href="#">Наши документы</a></li>
+					<li><a href="#">О производстве</a></li>
 					<li><a href="#">Экологические стандарты</a></li>
 				</ul>
 			</section>
 			<section class="footer-copyright">
-				<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+				<a class="btn-copyright" href="https://htmlacademy.ru">HTML Academy</a>
 				<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
 			</section>
 		</div>
