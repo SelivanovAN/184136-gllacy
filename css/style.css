@@ -73,6 +73,7 @@ body {
 .user-block {
 	float: right;
 	max-width: 328px;
+	margin-left: 250px;
 }
 .user-block .search,
 .user-block .login,
@@ -110,8 +111,8 @@ body {
 	padding-right: 34px;
 }
 
+/*-- ПОИСК ИКОНКА--*/
 
-/*-- ПОИСК --*/
 .user-block .search {
 	font-size: 0;
 }
@@ -134,7 +135,8 @@ body {
 	border-radius: 16px;
 }
 
-/*-- ВХОД --*/
+/*-- ВХОД ИКОНКА--*/
+
 .user-block .login::after {
 	content: "";
 	position: absolute;
@@ -155,7 +157,8 @@ body {
 	color: #000000;
 }
 
-/*-- КОРЗИНА --*/
+/*-- КОРЗИНА ИКОНКА--*/
+
 .user-block .basket::after {
 	content: "";
 	position: absolute;
@@ -185,14 +188,13 @@ body {
 	background-color: #242424;
 }*/
 
-/*-- ВРЕМЯ --*
 
-/* Почему не флотится на строку ниже???????
+/*-- ВРЕМЯ --*/
+
 .timework-tel {
-	float: left;
-	width: 165px;
-}*/
-
+	float: right;
+	width: 175px;
+}
 .timework-tel .timework {
 	font-size: 14px;
 	line-height: 16px;
