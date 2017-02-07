@@ -4,7 +4,7 @@ body {
 	line-height: 22px;
 	color: #ffffff;
 	font-weight: 400;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Tahoma", sans-serif;
 	background-color: #849d8f;
 }
 .clearfix {
@@ -42,7 +42,6 @@ body {
 .main-nav  li {
 	display: inline-block;
 	vertical-align: top;
-	
 }
 .main-nav  li a {	
 	display: block;
@@ -52,7 +51,7 @@ body {
 	line-height: 18px;
 	font-weight: 700;
 	color: #ffffff;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Tahoma", sans-serif;
 	text-decoration: none;
 	border-bottom: 1px solid #ffffff ;
 }
@@ -89,10 +88,10 @@ body {
 	line-height: 16px;
 	font-weight: 500;
 	color: #ffffff;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Tahoma", sans-serif;
 	vertical-align: top;	
 }
-/* Задаем фон кнопка шапки но не понятно как прозрачно только фону сделать
+/* Задаем фон кнопка шапки но не понятно как прозрачность только фону сделать
 .user-block .login {
 	background: #ffffff;
 	border-radius: 16px;
@@ -112,7 +111,6 @@ body {
 }
 
 /*-- ПОИСК ИКОНКА--*/
-
 .user-block .search {
 	font-size: 0;
 }
@@ -136,7 +134,6 @@ body {
 }
 
 /*-- ВХОД ИКОНКА--*/
-
 .user-block .login::after {
 	content: "";
 	position: absolute;
@@ -158,7 +155,6 @@ body {
 }
 
 /*-- КОРЗИНА ИКОНКА--*/
-
 .user-block .basket::after {
 	content: "";
 	position: absolute;
@@ -188,29 +184,27 @@ body {
 	background-color: #242424;
 }*/
 
-
 /*-- ВРЕМЯ --*/
-
 .timework-tel {
 	float: right;
 	width: 175px;
+	text-align: right;
 }
 .timework-tel .timework {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 700;
 	color: #ffffff;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Tahoma", sans-serif;
 }
 .timework-tel .tel {
 	font-size: 22px;
 	line-height: 24px;
 	font-weight: 700;
 	color: #ffffff;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Tahoma", sans-serif;
 }
 /*-- /ШАПКА --*/
-
 
 /*-- БЛОК ХЛЕБНЫХ КРОШЕК--*/
 .bread-main-nav {
@@ -228,55 +222,25 @@ body {
 	line-height: 16px;
 	color: #ffffff;
 	font-weight: 400;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Tahoma", sans-serif;
 	text-decoration: none;
 }
 .bread-main-nav  li:last-child a {
 	text-decoration: none;
 }
-
 /*-- /БЛОК ХЛЕБНЫХ КРОШЕК--*/
 
-.selection-ice h2 {
-	font-size: 35px;
-	line-height: 41px;
-	color: #ffffff;
-	font-weight: 700;
-	font-family: "Roboto", sans-serif;
-}
-.selection-ice .choice {
-	font-size: 14px;
-	line-height: 16px;
-	color: #ffffff;
-	font-weight: 500;
-	font-family: "Roboto", sans-serif;
-}
-.selection-ice .meaning {
-	font-size: 16px;
-	line-height: 18px;
-	color: #ffffff;
-	font-weight: 500;
-	font-family: "Roboto", sans-serif;
-}
-.selection-ice .btn-apply {
-	display: inline-block;
-	padding: 7px 27px;
-	text-decoration: none;
-	border: 2px solid #ffffff;
-	border-radius: 20px;
-	text-align: center;
-	font-size: 16px;
-	line-height: 18px;
-	color: #ffffff;
-	font-weight: 500;
-	font-family: "Roboto", sans-serif;
-	background-image: #ffffff; /* не работает почему?*/
-	/*opacity: 0.2;*/
-	/*position: relative;*/
 
-}
 /*-- ГЛАВНАЯ СТРАНИЦА --*/
 	/*-- СЛАЙДЕР --*/
+	.choice-ice h2 {
+	font-size: 60px;
+	line-height: 60px;
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Roboto", "Tahoma", sans-serif;
+	background-color: #849d8f;
+}
 .slider-inner {
 	overflow: hidden;
 }
@@ -310,21 +274,24 @@ body {
 #btn-1:checked ~ .slider-inner .slider-slides {
     transform: translate(0);
 }
-
 #btn-2:checked ~ .slider-inner .slider-slides {
     transform: translate(-850px);
 }
-
 #btn-3:checked ~ .slider-inner .slider-slides {
     transform: translate(-160px);
 }
-.choice-ice h2 {
-	font-size: 60px;
-	line-height: 60px;
+.agitation a {
+	display: block;
+	font-size: 32px;
+	line-height: 44px;
 	color: #ffffff;
-	font-weight: bold;
-	font-family: "Roboto Bold", "Arial", sans-serif;
+	font-weight: 700;
+	font-family: "Roboto", "Tahoma", sans-serif;
+	text-decoration: none;
+	padding: 5px 43px;
+	
 }
+	/*-- БЛОК ПРОМО АКЦИИ --*/
 .promo-action {
 	float: left;
 	width: 560px;
@@ -343,6 +310,68 @@ body {
 	background-image: url("../img/promo_choko.jpg");
 	background-repeat: no-repeat;
 }
+.promo-action span {
+	display: block;
+	margin: 0;
+	margin-top: 20px;
+	margin-left: 20px;
+	padding: 0;
+	font-size: 35px;
+	line-height: 41px;
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Roboto", "Tahoma", sans-serif;
+}
+.promo-action p {
+	display: block;
+	margin: 0;
+	margin-top: 23px;
+	margin-left: 20px;
+	margin-right: 15px;
+	padding: 0;
+	font-size: 18px;
+	line-height: 22px;
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Roboto", "Tahoma", sans-serif;
+}
+.promo-action .btn-want-jam  {
+	display: block;
+	float: right;
+	width: 165px;
+	margin-top: 29px;
+	margin-right: 21px;
+	margin-bottom: 24px;
+	padding: 12px 0px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Roboto", "Tahoma", sans-serif;
+	text-decoration: none;
+	background-color: red;
+	border-radius: 23px;
+}
+.promo-action .btn-want-choco {
+	display: block;
+	float: right;
+	width: 189px;
+	margin-top: 29px;
+	margin-right: 21px;
+	margin-bottom: 24px;
+	padding: 12px 0px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Roboto", "Tahoma", sans-serif;
+	text-decoration: none;
+	background-color: red;
+	border-radius: 23px;
+}
+	/*-- БЛОК САМЫХ ПОКУПАЕМЫХ МОРОЖЕННЫХ --*/
 .catalog .catalog-ice {
 	float: left;
 	width: 267px;
@@ -357,15 +386,37 @@ body {
 .catalog .catalog-ice img {
 	border-radius: 135px;
 }
-
+.catalog-ice .cost {
+	float: left;
+	width: 267px;
+	height: 45px;
+	position: relative;
+	bottom: 60px;
+	font-size: 32px;
+	line-height: 45px;
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Roboto", "Tahoma", sans-serif;
+	cursor: pointer;
+}
+.catalog-ice .specification {
+	position: relative;
+	bottom: 35px;
+	font-size: 16px;
+	line-height: 22px;
+	color: #ffffff;
+	font-weight: 500;
+	font-family: "Roboto", "Tahoma", sans-serif;
+	text-align: center;
+}
+	/*-- БЛОК ОПИСАНИЯ КОМПАНИИ --*/
 .description {
 	width: 1146px;
 	height: 306px;
 	background-image: url("../img/wafer.jpg");
 	background-repeat: no-repeat;
 	margin-top: 40px;
-	border-radius: 15px;
-	/*margin-left: 27px;*/
+	border-radius: 15px;	
 }
 .description .about {
 	margin-top: 30px;
@@ -374,57 +425,113 @@ body {
 }
 .description .make {
 	float: left;
-	width: 476px;
+	width: 540px;
 	height: 188px;
 }
 .description .delivery {
 	float: right;
-	width: 470px;
+	width: 560px;
 	height: 188px;
 }
 .description .about span {
 	font-size: 24px;
 	line-height: 30px;
-	color: #323232;
-	font-family: "Roboto Medium", "Tahoma", "Arial", sans-serif;
+	color: #000000;
+	font-weight: 500;
+	font-family: "Roboto", "Tahoma", sans-serif;
 }
-.description .make p,
-.description .delivery p {
+.description .make p {
+	position: relative;
+	display: inline-block;
+	margin-left: 20px;
+	padding-left: 57px;
 	font-size: 16px;
 	line-height: 22px;
-	color: #323232;
-	font-family: "Roboto Regular", "Tahoma", "Arial", sans-serif;
+	color: #000000;
+	font-weight: 400;
+	font-family: "Roboto", "Tahoma", sans-serif;
 }
+.description .make p:first-child::after {
+	content: "";
+	position: absolute;
+	top: -12px;
+	left: 0px;
+	width: 49px;
+	height: 49px;
+	background: transparent url("../img/ice.png") no-repeat;
+}
+.description .make p:nth-child(2)::after {
+	content: "";
+	position: absolute;
+	top: -12px;
+	left: 0px;
+	width: 49px;
+	height: 49px;
+	background: transparent url("../img/leaf.png") no-repeat;
+}
+.description .delivery p {
+	position: relative;
+	display: inline-block;
+	margin-left: 0px;
+	padding-left: 57px;
+	font-size: 16px;
+	line-height: 22px;
+	color: #000000;
+	font-weight: 400;
+	font-family: "Roboto", "Tahoma", sans-serif;
+}
+.description .delivery p:first-child::after {
+	content: "";
+	position: absolute;
+	top: -12px;
+	left: 0px;
+	width: 49px;
+	height: 49px;
+	background: transparent url("../img/cow.png") no-repeat;
+}
+.description .delivery p:nth-child(2)::after {
+	content: "";
+	position: absolute;
+	top: -12px;
+	left: 0px;
+	width: 49px;
+	height: 49px;
+	background: transparent url("../img/thermometer.png") no-repeat;
+}
+
+	/*-- БЛОК НОВОСТЕЙ И ПОДПИСКА НА РАССЫЛКУ --*/
 .news-sub {
 	width: 1146px;
 	height: 220px;
 	margin-top: 40px;
 	margin-bottom: 40px;
-	font-size: 0;
 }
 .news-sub .news {
 	float: left;
 	width: 560px;
 	height: 220px;
 	margin-right: 26px;
-	/*padding-left: 0;*/
-	/*font-size: 0;*/
 	border-radius: 15px;
 	background-image: url("../img/news.jpg");
 	background-repeat: no-repeat;
 }
 .news-sub .news p {
+	margin-left: 20px;
 	font-size: 16px;
 	line-height: 22px;
-	color: #323232;
-	font-family: "Roboto Medium", "Tahoma", "Arial", sans-serif;
+	color: #000000;
+	font-weight: 500;
+	font-family: "Roboto", "Tahoma", sans-serif;
 }
 .news-sub .news a {
+	display: inline-block;
+	width: 286px;
+	margin-left: 20px;
 	font-size: 24px;
 	line-height: 30px;
-	font-weight: bold;
-	color: #323232;
-	font-family: "Roboto Bold", "Tahoma", "Arial", sans-serif;
+	color: #000000;
+	font-weight: 700;
+	font-family: "Roboto", "Tahoma", sans-serif;
 }
 .news-sub .sub {
 	float: right;
@@ -434,20 +541,49 @@ body {
 	border-radius: 15px;
 }
 .news-sub .sub p {
+	margin-top: 36px;
+	margin-left: 27px;
+	margin-bottom: 28px;
 	font-size: 16px;
 	line-height: 22px;
-	color: #5a5a5a;
-	font-family: "Roboto Medium", "Tahoma", "Arial", sans-serif;
+	color: #000000;
+	font-weight: 400;
+	font-family: "Roboto", "Tahoma", sans-serif;
 }
+.news-sub .sub form {
+	margin-left: 26px;
+	margin-right: 0px;
+}
+.sub input {
+	width: 368px;
+	margin-right: 11px;
+	height: 42px;
+	border-radius: 5px;
+	border-color: #d3d3d2;
+}
+.sub button {
+	width: 129px;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 16px;
+	line-height: 24px;
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Roboto", "Tahoma", sans-serif;
+	background-color: red;
+	border-radius: 27px;
+	border: none;
+}
+	
+	/*-- БЛОК ПРОЕЗДА АДРЕСА --*/
 .driving-address {
-	/*min-width: 1200px;*/
+	min-width: 1200px;
 	min-height: 430px;
 	margin-left: 23.5px;
 	margin-right: 23.5px;
 	margin-bottom: 19px;
 	background-image: url("../img/map.jpg");
 	background-repeat: no-repeat;
-	/*background-position: 27px 0px;*/
 }
 .driving-address .driving {
 	/*opacity: 0.7;*/
@@ -459,16 +595,95 @@ body {
 	position: relative;
     left: 870px;
     bottom: -62px;
-    
+	vertical-align: top;
 }
-.driving-address .driving {
-	color: #323232;
+.driving  .line-1,
+.driving  .line-2 {
+	display: inline-block;
+	margin-left: 26px;
 }
-
+.driving  .line-1:first-child {
+	margin-top: 20px;
+	margin-bottom: 4px;
+}
+.driving  .line-1 {
+	font-size: 14px;
+	line-height: 20px;
+	color: #000000;
+	font-weight: 400;
+	font-family: "Roboto", "Tahoma", sans-serif;
+}
+.driving  .line-2 {
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+	font-weight: 700;
+	font-family: "Roboto", "Tahoma", sans-serif;
+}
+.driving .btn-feedback {
+	display: block;
+	width: 252px;
+	margin-top: 25px;
+	margin-left: 21px;
+	margin-right: 0px;
+	margin-bottom: 30px;
+	padding: 12px 0px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Roboto", "Tahoma", sans-serif;
+	text-decoration: none;
+	background-color: red;
+	border-radius: 23px;
+}
 /*-- /ГЛАВНАЯ СТРАНИЦА --*/
 
 
 /*-- СТРАНИЦА КАТАЛОГА МОРОЖЕННОГО --*/
+
+	/*-- БЛОК ВЫБОРА МОРОЖЕННЫХ --*/
+.selection-ice h2 {
+	font-size: 35px;
+	line-height: 41px;
+	color: #ffffff;
+	font-weight: 700;
+	font-family: "Roboto", "Tahoma", sans-serif;
+}
+.selection-ice .choice {
+	font-size: 14px;
+	line-height: 16px;
+	color: #ffffff;
+	font-weight: 500;
+	font-family: "Roboto", "Tahoma", sans-serif;
+}
+.selection-ice .meaning {
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+	font-weight: 500;
+	font-family: "Roboto", "Tahoma", sans-serif;
+}
+.selection-ice .btn-apply {
+	display: inline-block;
+	padding: 7px 27px;
+	text-decoration: none;
+	border: 2px solid #ffffff;
+	border-radius: 20px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+	font-weight: 500;
+	font-family: "Roboto", "Tahoma", sans-serif;
+	background-image: #ffffff; /* не работает почему?*/
+	/*opacity: 0.2;*/
+	/*position: relative;*/
+}
+	/*-- /БЛОК ВЫБОРА МОРОЖЕННЫХ --*/
+
+	/*-- БЛОК АССОРТИМЕНТА МОРОЖЕННЫХ --*/
 .goods .case-catalog  {
 	float: left;
 	width: 267px;
@@ -492,7 +707,7 @@ body {
 	line-height: 45px;
 	color: #ffffff;
 	font-weight: 700;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Tahoma", sans-serif;
 	cursor: pointer;
 }
 .goods .specification {
@@ -507,24 +722,22 @@ body {
 	line-height: 22px;
 	color: #ffffff;
 	font-weight: 500;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Tahoma", sans-serif;
 	/*text-decoration: none;*/
 }
 .goods .btn-show-catalog {
 	position: relative;
 	Float: left;
-	
 	width: 168px;
 	height: 25px;
 	font-size: 18px;
 	line-height: 24px;
 	color: #ffffff;
 	font-weight: 700;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Tahoma", sans-serif;
 	text-decoration: none;
 	padding: 0 18px;
 }
-
 .goods .case-catalog:nth-child(4),
 .goods .case-catalog:nth-child(8),
 .goods .case-catalog:nth-child(12) {
@@ -538,7 +751,6 @@ body {
 	margin-bottom: 50px;*/
 	margin-top: 82px;
 }
-
 .goods .catalog-pages li {
 	display: inline-block;
 	margin-right: 10px;
@@ -549,14 +761,13 @@ body {
 	line-height: 18px;
 	color: #ffffff;
 	font-weight: 500;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Tahoma", sans-serif;
 	text-decoration: none;
 }
+	/*-- /БЛОК АССОРТИМЕНТА МОРОЖЕННЫХ --*/
 /*-- /СТРАНИЦА КАТАЛОГА МОРОЖЕННОГО --*/
 
-
 /*-- ПОДВАЛ --*/
-
 	/*-- СОЦИАЛЬНЫЕ КНОПКИ --*/
 .footer-social {
 	float: left;
@@ -619,7 +830,7 @@ body {
 	line-height: 18px;
 	color: #ffffff;
 	font-weight: 400;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Tahoma", sans-serif;
 	text-decoration: none;
 }
 .footer-main li:nth-child(2)  a  {
@@ -660,7 +871,7 @@ body {
 	line-height: 18px;
 	color: #ffffff;
 	font-weight: 400;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Tahoma", sans-serif;
 	text-decoration: none;
 }
 .footer-copyright .btn-copyright::after {
@@ -678,7 +889,7 @@ body {
 	line-height: 18px;
 	color: #ffffff;
 	font-weight: 400;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Tahoma", sans-serif;
 	/*text-decoration: none;*/
 }
 .footer-copyright a {
@@ -686,6 +897,6 @@ body {
 	line-height: 18px;
 	color: #ffffff;
 	font-weight: 400;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Tahoma", sans-serif;
 	/*text-decoration: none;*/
 }
