@@ -8,6 +8,11 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
+	<input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
+	<div class="site-wrapper">
+		<div class="content-wrapper">
 	<!--Блок шапки-->
 	<header class="main-header">
 		<div class="container clearfix">
@@ -34,32 +39,25 @@
 	<!--/Блок шапки-->
 	</header>
 	<main class="container">
-	<div class="ad clearfix"><!--advertising реклама-->
-		<div class="page-choice">
-				<input type="radio" id="btn-1" name="check-1" value="1"> <!--label радио кнопкам надо или нет?-->
-				<input type="radio" id="btn-2" name="check-2" value="2">
-				<input type="radio" id="btn-3" name="check-3" value="3">
-					<div class="slider-controls">
-						<label for="btn-1"></label>
-						<label for="btn-2"></label>
-						<label for="btn-3"></label>
-					</div>
-					<div class="slider-inner">
-						<div class="choice-ice">
-							<h2>Крем-брюле и пломбир с малиновым джемом</h2>
-						</div>
-						<div class="agitation">
-							<a href="#">Давайте оба!</a>
-							</div>
-						<div class="slider-slides">
-							<img src="img/advertising_1.png" alt="...">
-							<img src="img/advertising_2.png" alt="...">
-							<img src="img/advertising_3.png" alt="...">
-							
-						</div>
-					</div>
-         </div>
-		
+	
+	<div class="slider">
+		   <div class="slide" id="slide1">
+            <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
+            <a class="slide-btn" href="#">Давайте оба!</a>
+          </div>
+          <div class="slide" id="slide2">
+            <div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
+            <a class="slide-btn" href="#">Давайте оба!</a>
+          </div>
+          <div class="slide" id="slide3">
+            <div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
+            <a class="slide-btn" href="#">Давайте оба!</a>
+          </div>
+		  <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
 	</div>
 	<!--Блок промо акции-->
 	<div class="promo clearfix">
@@ -77,28 +75,28 @@
 	</div>
 	<!--Блок самых покупаемых мороженных-->
 	<div class="catalog clearfix">
-		<section class="catalog-ice">
-			<span class="tag">ХИТ</span>
+		<section class="catalog-ice"><!--tag бирка, ярлык, признак, этикетка, ушко, наконечник-->
+			<span class="tag"><img src="img/hit.png" width="61" height="61" alt="Значек покупаемого мороженного"></span>
 			<img src="img/ice_1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-			<span class="cost">310 <!--Какой символ рубля?-->/кг</span>
+			<span class="cost">310 <img src="img/rur.png" width="27" height="32" alt="Символ рубля"> /кг</span>
 			<p class="specification">Сливочное с апельсиновым джемом и цитрусовой стружкой</p><!--Это ссылка скорее?-->
 		</section>	
 		<section class="catalog-ice">
-		<span class="tag">ХИТ</span> <!--tag бирка, ярлык, признак, этикетка, ушко, наконечник-->
+		<span class="tag"><img src="img/hit.png" width="61" height="61" alt="Значек покупаемого мороженного"></span> 
 			<img src="img/ice_2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-			<span class="cost">318 <!--Какой символ рубля?-->/кг</span>
+			<span class="cost">380 <img src="img/rur.png" width="27" height="32" alt="Символ рубля"> /кг</span>
 			<p class="specification">Сливочно-кофейное с кусочками шоколада</p><!--Это ссылка скорее?-->
 		</section>
 		<section class="catalog-ice">
-			<span class="tag">ХИТ</span>
+			<span class="tag"><img src="img/hit.png" width="61" height="61" alt="Значек покупаемого мороженного"></span>
 			<img src="img/ice_3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-			<span class="cost">355 <!--Какой символ рубля?-->/кг</span>
+			<span class="cost">355 <img src="img/rur.png" width="27" height="32" alt="Символ рубля"> /кг</span>
 			<p class="specification">Сливочно-клубничное с присыпкой из белого шоколада</p><!--Это ссылка скорее?-->
 		</section>
 		<section class="catalog-ice">
-			<span class="tag">ХИТ</span>
+			<span class="tag"><img src="img/hit.png" width="61" height="61" alt="Значек покупаемого мороженного"></span>
 			<img src="img/ice_4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-			<span class="cost">415 <!--Какой символ рубля?-->/кг</span>
+			<span class="cost">415 <img src="img/rur.png" width="27" height="32" alt="Символ рубля"> /кг</span>
 			<p class="specification">Сливочное крем-брюле с карамельной подливкой</p><!--Это ссылка скорее?-->
 		</section>
 	<!--/Блок самых покупаемых мороженных-->
@@ -120,17 +118,22 @@
 	</div>
 	<!--Блок новостей и подписка на рассылку-->
 	<div class="news-sub clearfix">
+		
 		<section class="news">
+		
 			<p>Новое в нашем блоке</p>
 			<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
 		</section>
 		<section class="sub">
+		<div class="white-layer">
 			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно=)</p>
 			<form action="https://echo.htmlacademy.ru" method="get">
 				<input type="Text" name="email" placeholder="Электронная почта">
-				<button name="send">Отправить</button>
+				<button class="btn-send" name="send">Отправить</button>
 			</form>
+		</div>
 		</section>
+		
 	<!--/Блок новостей и подписка на рассылку-->
 	</div>
 	</main>
@@ -177,5 +180,23 @@
 		</div>
 	</footer>
 	<!--/Блок подвала-->
+		</div><!--content-wrapper-->
+	</div><!--site-wrapper-->
+	<div class="modal-in">
+		<form class="login-form" action="https://echo.htmlacademy.ru" method="get">
+			<input class="email" type="text" name="email" placeholder="Электронная почта">
+			<input class="password" type="password"  name="password" placeholder="Пароль">
+			<button class="btn-modal-in" type="submit" title="Войти">Войти</button>
+		</form>
+		<section class="restore-registration">
+			<a class="restore" href="#">Забыли пароль?</a><br>
+			<a class="registration" href="#">Новая регистрация</a>
+		<section>
+    </div>
+	<div class="modal-map">
+		<button class="modal-map-close" type="button" title="Закрыть">Закрыть</button>
+		<div id="yandex-map"></div>
+    </div>
+	<!--<div class="map-overlay"></div>-->
   </body>
 </html>
