@@ -12,13 +12,13 @@
   	<header class="main-header">
 		<div class="container clearfix">
 			<div class="header-logo">
-			  <a href="#"><img src="img/logo.png" width="154" height="64" alt="Логотип Глейси"></a>
+			  <a href="./index.html"><img src="img/logo.png" width="154" height="64" alt="Логотип Глейси"></a>
 			</div>
 			<nav class="main-navigation">
 			  <ul class="main-nav">
-				<li><a href="#">Каталог</a></li>
-				<li><a href="#">Доставка и оплата</a></li>
-				<li><a href="#">О Компании</a></li>
+				<li ><a class="active" href="#">Каталог</a></li>
+				<li class="li-2"><a href="#">Доставка и оплата</a></li>
+				<li class="li-3"><a href="#">О Компании</a></li>
 			  </ul>
 			</nav>
 			<div class="user-block">
@@ -209,6 +209,25 @@
 			</section>
 		</div>
 	</footer>
+	<!--Модальные формы-->
+		<!--Форма поиска-->
+	<div class="modal-search">
+		<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+			<input class="search" type="text" name="search" placeholder="Что ищем?">
+		</form>
+	</div><!--/Форма поиска-->
+		<!--Форма входа-->
+	<div class="modal-in">
+		<form class="login-form" action="https://echo.htmlacademy.ru" method="get">
+			<input class="email" type="text" name="email" placeholder="Электронная почта">
+			<input class="password" type="password"  name="password" placeholder="Пароль">
+			<button class="btn-modal-in" type="submit" title="Войти">Войти</button>
+		</form>
+		<section class="restore-registration">
+			<a class="restore" href="#">Забыли пароль?</a><br>
+			<a class="registration" href="#">Новая регистрация</a>
+		</section>
+    </div><!--Форма входа-->
 	<!--/Блок подвала-->
   </body>
 </html>

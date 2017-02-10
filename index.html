@@ -21,9 +21,9 @@
 			</div>
 			<nav class="main-navigation">
 			  <ul class="main-nav">
-				<li><a href="#">Каталог</a></li>
-				<li><a href="#">Доставка и оплата</a></li>
-				<li><a href="#">О Компании</a></li>
+				<li class="li-1"><a href="#">Каталог</a></li>
+				<li class="li-2"><a href="#">Доставка и оплата</a></li>
+				<li class="li-3"><a href="#">О Компании</a></li>
 			  </ul>
 			</nav>
 			<div class="user-block">
@@ -180,8 +180,17 @@
 		</div>
 	</footer>
 	<!--/Блок подвала-->
-		</div><!--content-wrapper-->
-	</div><!--site-wrapper-->
+	</div><!--/content-wrapper-->
+	</div><!--/site-wrapper-->
+	
+	<!--Модальные формы-->
+		<!--Форма поиска-->
+	<div class="modal-search">
+		<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+			<input class="search" type="text" name="search" placeholder="Что ищем?">
+		</form>
+	</div><!--/Форма поиска-->
+		<!--Форма входа-->
 	<div class="modal-in">
 		<form class="login-form" action="https://echo.htmlacademy.ru" method="get">
 			<input class="email" type="text" name="email" placeholder="Электронная почта">
@@ -191,12 +200,24 @@
 		<section class="restore-registration">
 			<a class="restore" href="#">Забыли пароль?</a><br>
 			<a class="registration" href="#">Новая регистрация</a>
-		<section>
-    </div>
+		</section>
+    </div><!--Форма входа-->
+		<!--Форма карты-->
 	<div class="modal-map">
 		<button class="modal-map-close" type="button" title="Закрыть">Закрыть</button>
 		<div id="yandex-map"></div>
-    </div>
+    </div><!--/Форма карты-->
+		<!--Форма обратной связи-->
+	<div class="modal-feedback">
+		<button class="btn-modal-feedback-close" type="button" title="Закрыть">Закрыть</button>
+		<h2>Мы обязательно вам ответим!</h2>
+		<form class="feedback-form" action="https://echo.htmlacademy.ru" method="get">
+			<input class="feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?">
+			<input class="feedback-email" type="text" name="feedback-email" placeholder="Ваша почта для ответа?">
+			<textarea class="feedback-text" name="feedback-text" rows="6" placeholder="Напишите что-нибудь..."></textarea>
+			<button class="btn-modal-feedback" type="submit" title="Отправить">Отправить</button>
+		</form>
+	</div><!--/Форма обратной связи-->
 	<!--<div class="map-overlay"></div>-->
   </body>
 </html>
