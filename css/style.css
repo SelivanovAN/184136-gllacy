@@ -6,7 +6,21 @@ body {
 	font-weight: 400;
 	font-family: "Roboto", "Tahoma", sans-serif;
 	background-color: #849d8f;
+	/*background-image: url("../img/advertising_1.png");
+	background-repeat: no-repeat;
+	background-position: top center;*/
+}/*
+body::before,
+body::after {
+	content: "";
+	visibility: hidden;
 }
+body::before {
+	background-image: url("../img/advertising_2.png");
+}
+body::after {
+	background-image: url("../img/advertising_3.png");
+}*/
 .clearfix {
 	content: "";
     display: table;
@@ -16,6 +30,11 @@ body {
 	width: 1146px;
 	margin: 0 auto;
 	padding: 0 27px;
+}
+.container-map {
+	width: 1146px;
+	margin: 0 auto;
+	padding: 0 0;
 }
 /*--ШАПКА--*/
 .header-logo {
@@ -347,21 +366,21 @@ body > input[type="radio"] {
 	text-decoration: none;
 	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 	background: #f26843;
-	background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
 	background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+	background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
 	background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
 	border-radius: 100px;
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 .slide-btn:hover {
-	background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
 	background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+	background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
 	background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 .slide-btn:active {
-	background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
 	background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+	background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
 	background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
 	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
@@ -480,16 +499,16 @@ body > input[type="radio"] {
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 .promo-action .btn-want-jam:hover {
-  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+	background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+	background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+	background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 .promo-action .btn-want-jam:active {
-  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+	background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+	background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+	background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 .promo-action .btn-want-choco {
 	display: inline-block;
@@ -516,16 +535,16 @@ body > input[type="radio"] {
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 .promo-action .btn-want-choco:hover {
-  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+	background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+	background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+	background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 .promo-action .btn-want-choco:active {
-  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+	background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+	background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+	background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }/*-- /БЛОК ПРОМО АКЦИИ --*/
 	/*-- БЛОК САМЫХ ПОКУПАЕМЫХ МОРОЖЕННЫХ --*/
 .catalog .catalog-ice {
@@ -814,23 +833,21 @@ body > input[type="radio"] {
 	outline: none;
 }
 .sub .btn-send:hover {
-  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+	background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+	background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+	background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 .sub .btn-send:active {
-  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+	background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+	background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+	background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }/*-- /БЛОК НОВОСТЕЙ И ПОДПИСКА НА РАССЫЛКУ --*/
 	/*-- БЛОК ПРОЕЗДА АДРЕСА --*/
 .driving-address {
 	min-width: 1200px;
 	min-height: 430px;
-	margin-left: 31.5px;
-	margin-right: 23.5px;
 	margin-bottom: 19px;
 	background-image: url("../img/map.jpg");
 	background-repeat: no-repeat;
@@ -910,16 +927,16 @@ body > input[type="radio"] {
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 .driving .btn-feedback:hover {
-  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+	background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+	background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+	background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 .driving .btn-feedback:active {
-  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+	background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+	background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+	background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }/*-- /БЛОК ПРОЕЗДА АДРЕСА --*/ /*-- /ГЛАВНАЯ СТРАНИЦА --*/
 
 /*-- СТРАНИЦА CATALOG --*/
@@ -1595,14 +1612,14 @@ body > input[type="radio"] {
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 .btn-modal-in:hover {
-	background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
 	background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+	background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
 	background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 .btn-modal-in:active {
-	background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
 	background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+	background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
 	background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
 	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
@@ -1753,14 +1770,14 @@ body > input[type="radio"] {
 	border: none;
 }
 .btn-modal-feedback:hover {
-	background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
 	background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+	background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
 	background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 .btn-modal-feedback:active {
-	background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
 	background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+	background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
 	background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
 	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }/*-- /ОКНО ОБРАТНОЙ СВЯЗИ--*/

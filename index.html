@@ -8,11 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-	<input type="radio" id="btn-1" name="toggle" checked>
-    <input type="radio" id="btn-2" name="toggle">
-    <input type="radio" id="btn-3" name="toggle">
-	<div class="site-wrapper">
-		<div class="content-wrapper">
+	<input class="btn-radio" type="radio" id="btn-1" name="toggle" checked>
+	<input class="btn-radio" type="radio" id="btn-2" name="toggle">
+	<input class="btn-radio" type="radio" id="btn-3" name="toggle">
+	<div class="site-wrapper">	
 	<!--Блок шапки-->
 	<header class="main-header">
 		<div class="container clearfix">
@@ -39,8 +38,8 @@
 	<!--/Блок шапки-->
 	</header>
 	<main class="container">
-	
 	<div class="slider">
+			
 		   <div class="slide" id="slide1">
             <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
             <a class="slide-btn" href="#">Давайте оба!</a>
@@ -52,9 +51,9 @@
           <div class="slide" id="slide3">
             <div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
             <a class="slide-btn" href="#">Давайте оба!</a>
-          </div>
+          </div>	
 		  <div class="slider-controls">
-            <label for="btn-1"></label>
+			<label for="btn-1"></label>
             <label for="btn-2"></label>
             <label for="btn-3"></label>
           </div>
@@ -130,13 +129,12 @@
 				<button class="btn-send" name="send">Отправить</button>
 			</form>
 		</div>
-		</section>
-		
+		</section>	
 	<!--/Блок новостей и подписка на рассылку-->
 	</div>
 	</main>
 	<!--Блок проезда-адреса-->
-	<div class="driving-address">
+	<div class="driving-address container-map">
 		<div class="driving">
 			<div class="top-lines">
 			<span class="line-1">Адрес главного офиса<br>
@@ -147,14 +145,12 @@
 			<div class="bottom-lines">
 			<span class="line-1">Для заказов по телефону:</span><br>
 			<span class="line-2">8 812 450-25-25</span><br>
-			
 			</div>
 			<span class="line-1">(с 10 до 20 ежедневно)</span><br>
 			<a class="btn-feedback" href="#">Форма обратной связи</a>
 		</div>
 	<!--/Блок проезда-адреса-->	
 	</div>
-	
 	<!--Блок подвала-->
 	<footer>
 		<div class="container clearfix">
@@ -179,9 +175,7 @@
 		</div>
 	</footer>
 	<!--/Блок подвала-->
-	</div><!--/content-wrapper-->
 	</div><!--/site-wrapper-->
-	
 	<!--Модальные формы-->
 		<!--Форма поиска-->
 	<div class="modal-search">
