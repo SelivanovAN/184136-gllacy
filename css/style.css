@@ -162,7 +162,7 @@ body {
 	border-radius: 100px;
 }
 
-/*-- ПОИСК ИКОНКА--*/
+	/*-- ПОИСК ИКОНКА--*/
 .user-block .search {
 	font-size: 0;
 }
@@ -184,9 +184,9 @@ body {
 .user-block .search:hover {
 	background-color: #ffffff;
 	border-radius: 100%;
-}
+}/*-- /ПОИСК ИКОНКА--*/
 
-/*-- ВХОД ИКОНКА--*/
+	/*-- ВХОД ИКОНКА--*/
 .user-block .login::after {
 	content: "";
 	position: absolute;
@@ -203,9 +203,9 @@ body {
 	background-color: #ffffff;
 	border-radius: 16px;
 	color: #000000;
-}
+}/*-- /ВХОД ИКОНКА--*/
 
-/*-- КОРЗИНА ИКОНКА--*/
+	/*-- КОРЗИНА ИКОНКА--*/
 .user-block .basket::after {
 	content: "";
 	position: absolute;
@@ -222,9 +222,9 @@ body {
 	background-color: #ffffff;
 	border-radius: 16px;
 	color: #000000;
-}
+}/*-- /КОРЗИНА ИКОНКА--*/
 
-/*-- ВРЕМЯ --*/
+	/*-- ВРЕМЯ --*/
 .timework-tel {
 	float: right;
 	margin-top: 15px;
@@ -244,8 +244,7 @@ body {
 	font-weight: 700;
 	color: #ffffff;
 	font-family: "Roboto", "Tahoma", sans-serif;
-}
-/*-- /ШАПКА --*/
+}/*-- /ШАПКА --*/
 
 /*-- БЛОК ХЛЕБНЫХ КРОШЕК--*/
 .bread-main-nav {
@@ -283,11 +282,9 @@ body {
 }
 .bread-main-nav li:last-child a::after{
 	content: none;
-}
-/*-- /БЛОК ХЛЕБНЫХ КРОШЕК--*/
+}/*-- /БЛОК ХЛЕБНЫХ КРОШЕК--*/
 
-
-/*-- ГЛАВНАЯ СТРАНИЦА --*/
+/*-- ГЛАВНАЯ СТРАНИЦА INDEX --*/
 	/*-- СЛАЙДЕР --*/
 	.choice-ice h2 {
 	font-size: 60px;
@@ -413,7 +410,7 @@ body > input[type="radio"] {
 #btn-2:checked ~ .site-wrapper label[for="btn-2"],
 #btn-3:checked ~ .site-wrapper label[for="btn-3"] {
 	background-color: #ffffff;
-}
+}/*-- /СЛАЙДЕР --*/
 	/*-- БЛОК ПРОМО АКЦИИ --*/
 .promo-action {
 	float: left;
@@ -529,7 +526,7 @@ body > input[type="radio"] {
   background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-}
+}/*-- /БЛОК ПРОМО АКЦИИ --*/
 	/*-- БЛОК САМЫХ ПОКУПАЕМЫХ МОРОЖЕННЫХ --*/
 .catalog .catalog-ice {
 	float: left;
@@ -547,7 +544,7 @@ body > input[type="radio"] {
 	margin-right: 0;
 }
 .catalog-ice .big-ice {
-	border-radius: 1000px;
+	border-radius: 50%;
 }
 .catalog-ice .cost {
 	float: left;
@@ -583,7 +580,7 @@ body > input[type="radio"] {
 	font-family: "Roboto", "Tahoma", sans-serif;
 	text-align: center;
 	text-decoration: underline;
-}
+}/*-- /БЛОК САМЫХ ПОКУПАЕМЫХ МОРОЖЕННЫХ --*/
 /*.catalog-ice:first-child .underline::after { /*Как сделать подчеркивание на две строки?
 	content: "";
 	position: absolute;
@@ -715,7 +712,7 @@ body > input[type="radio"] {
 	width: 49px;
 	height: 49px;
 	background: transparent url("../img/thermometer.png") no-repeat;
-}
+}/*-- /БЛОК ОПИСАНИЯ КОМПАНИИ --*/
 
 	/*-- БЛОК НОВОСТЕЙ И ПОДПИСКА НА РАССЫЛКУ --*/
 .news-sub {
@@ -743,7 +740,6 @@ body > input[type="radio"] {
 	border-radius: 15px;
 	background: #f8f7f4;
 	z-index: 2;
-	/*background-repeat: no-repeat;*/
 }
 .news-sub .news p {
 	margin-left: 20px;
@@ -815,6 +811,7 @@ body > input[type="radio"] {
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 	border: none;
 	cursor: pointer;
+	outline: none;
 }
 .sub .btn-send:hover {
   background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
@@ -827,7 +824,7 @@ body > input[type="radio"] {
   background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-}	
+}/*-- /БЛОК НОВОСТЕЙ И ПОДПИСКА НА РАССЫЛКУ --*/
 	/*-- БЛОК ПРОЕЗДА АДРЕСА --*/
 .driving-address {
 	min-width: 1200px;
@@ -839,7 +836,6 @@ body > input[type="radio"] {
 	background-repeat: no-repeat;
 }
 .driving-address .driving {
-	/*opacity: 0.7;*/
 	display: inline-block;
 	width: 302px;
 	height: 305px;
@@ -924,13 +920,13 @@ body > input[type="radio"] {
   background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-}
-/*-- /ГЛАВНАЯ СТРАНИЦА --*/
-
+}/*-- /БЛОК ПРОЕЗДА АДРЕСА --*/ /*-- /ГЛАВНАЯ СТРАНИЦА --*/
 
 /*-- СТРАНИЦА CATALOG --*/
-
 	/*-- БЛОК ВЫБОРА МОРОЖЕННЫХ --*/
+.selection-ice {
+	height: 131px;
+}
 .selection-ice h2 {
 	font-size: 35px;
 	line-height: 41px;
@@ -952,24 +948,249 @@ body > input[type="radio"] {
 	font-weight: 500;
 	font-family: "Roboto", "Tahoma", sans-serif;
 }
-.selection-ice .btn-apply {
+	/*-- СОРТИРОВКА --*/
+.sorting {
+	float: left;
+	width: 194px;
+	height: 57px;
+	margin-right: 13px;
+}
+.sorting label {
+	margin-left: 16px;
+}
+.sorting select {
+	width: 194px;
+	padding-left: 16px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-right: 14px;
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+	font-weight: 500;
+	font-family: "Roboto", "Tahoma", sans-serif;
+	background: #9db1a5;
+	border-radius: 100px;
+	outline: none;
+	border: none;
+}
+.sorting select:hover {
+	background: #ffffff;
+	color: #000000;
+	outline: none;
+	border: none;
+}
+.sorting select:active {
+	background: #ffffff;
+	color: #000000;
+	outline: none;
+	border: none;
+}
+.sorting select:focus {
+	background: #ffffff;
+	color: #000000;
+	outline: none;
+	border: none;
+}/*-- /СОРТИРОВКА --*/
+	/*-- ФИЛЬТРЫ --*/
+.price-ice {
+	float: left;
+	width: 218px;
+	height: 57px;
+	margin-right: 14px;
+}
+.price-controls {
+	margin-left: 16px;
+	height: 20px;	
+	font-size: 0;
+	/*margin-bottom: 1px;*/
+}
+.price-controls label {
 	display: inline-block;
-	padding: 7px 27px;
+	vertical-align: top;
+}
+.price-controls input[type="text"] {
+	width: 35px;
+	font-size: 16px;
+	line-height: 18px;
+	padding: 0;
+	color: #ffffff;
+	font-weight: 500;
+	font-family: "Roboto", "Tahoma", sans-serif;
+	text-align: center;
+	background-color: transparent;
+	border: none;
+}
+.range-controls {
+	position: relative;
+	width: 188px;
+	height: 20px;
+	padding-top: 16px;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-radius: 100px;
+	background: #9db1a5;
+	border: none;
+}
+.range-controls .scale {
+	height: 4px;
+	background: #d1dad3;
+}
+.range-controls .bar {
+	width: 70%;
+	height: 4px;
+	background: #ffffff;
+}
+.range-controls .toggle {
+	position: absolute;
+	top: 8px;
+	left: 0px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+    background: #ffffff;
+	cursor: pointer;
+	box-shadow: 0 2px 1px 0 #99a9a0;
+}
+.range-controls .toggle-min {
+  left: 35px;
+}
+.range-controls .toggle-max {
+  left: 133px;
+}/*-- /ФИЛЬТРЫ --*/
+	/*-- ЖИРНОСТЬ --*/
+.fatness {
+	float: left;
+	width: 415px;
+	height: 57px;
+	margin-right: 270px;
+}
+.fatness span {
+	margin-left: 16px;
+}
+.fatness .radiobox {
+	min-width: 415px;
+	height: 37px;
+	background: #9db1a5;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+	padding-left: 16px;
+}
+.radiobox input[type="radio"] {
+	display: none;
+}
+.radiobox input[type="radio"] + label {
+	position: relative;
+	padding-left: 32px;
+	line-height: 20px;
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+	margin-top: 9px;
+	margin-right: 21px;
+}
+.radiobox input[type="radio"] + label:last-child {
+	margin-right: 0px;
+}	
+.radiobox input[type="radio"] + label::before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: transparent url("../img/radio_off.png") no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.radiobox input[type="radio"]:checked + label::before {
+	background: transparent url("../img/radio_on.png") no-repeat;
+}/*--0/ ЖИРНОСТЬ --*/
+	/*-- НАПОЛНИТЕЛИ ЧЕКБОКСЫ --*/
+.fillers {
+	float: left;
+	width: 703px;
+	height: 57px;
+	margin-right: 25px;
+	margin-top: 16px;
+}
+.fillers span {
+	margin-left: 16px;
+}
+.fillers .checkbox {
+	min-width: 703px;
+	height: 37px;
+	background: #9db1a5;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+	padding-left: 16px;
+}
+.checkbox input[type="checkbox"] {
+	display: none;
+}
+.checkbox input[type="checkbox"] + label {
+	position: relative;
+	padding-left: 32px;
+	line-height: 20px;
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+	margin-top: 9px;
+	margin-right: 21px;
+}
+.checkbox input[type="checkbox"] + label:last-child {
+	margin-right: 0px;
+}	
+.checkbox input[type="checkbox"] + label::before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: transparent url("../img/check_off.png") no-repeat;
+	/*background-position: ;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.checkbox input[type="checkbox"]:checked + label::before {
+	background: transparent url("../img/check_on.png") no-repeat;
+}/*-- /НАПОЛНИТЕЛИ ЧЕКБОКСЫ --*/
+	/*-- КНОПКА ПРИМЕНИТЬ --*/
+.selection-ice .btn-apply {
+	margin-top: 35px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 8px 27px;
 	text-decoration: none;
 	border: 2px solid #ffffff;
-	border-radius: 20px;
+	border-radius: 100px;
 	text-align: center;
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
 	font-weight: 500;
 	font-family: "Roboto", "Tahoma", sans-serif;
-	background-image: #ffffff; 
+	background: #9db1a5;
+	outline: none;
 }
-	/*-- /БЛОК ВЫБОРА МОРОЖЕННЫХ --*/
-
+.selection-ice .btn-apply:hover {
+	color: #000000;
+	background: #ffffff;
+	border: none;
+	padding: 9px 27px;
+}
+.selection-ice .btn-apply:active {
+	color: #000000;
+	background: #eaeaea;
+	border: none;
+	padding: 9px 27px;
+	box-shadow: inset 0 3px 2px rgba(108, 109, 108, 1);
+}/*-- /КНОПКА ПРИМЕНИТЬ --*/ /*-- /БЛОК ВЫБОРА МОРОЖЕННЫХ --*/
+		
 	/*-- БЛОК АССОРТИМЕНТА МОРОЖЕННЫХ --*/
-
 .goods {
 	margin-bottom: 50px;
 	border-bottom-color: red;
@@ -1061,7 +1282,6 @@ body > input[type="radio"] {
 	cursor: pointer;
 	/*background: red;*/
 }
-
 .catalog-pages .active-page {
     background-color: #ffffff;
 	color: #000000;
@@ -1077,10 +1297,8 @@ body > input[type="radio"] {
 .next {
     text-indent: -3600px;
 	background:  transparent url("../img/arrow_right.png") no-repeat center;
-}
+}/*-- /БЛОК АССОРТИМЕНТА МОРОЖЕННЫХ --*/ /*-- /СТРАНИЦА CATALOG --*/
 
-	/*-- /БЛОК АССОРТИМЕНТА МОРОЖЕННЫХ --*/
-/*-- /СТРАНИЦА CATALOG --*/
 
 /*-- ПОДВАЛ --*/
 	/*-- СОЦИАЛЬНЫЕ КНОПКИ --*/
@@ -1142,8 +1360,7 @@ body > input[type="radio"] {
 }
 .social-btn-fb:active {
 	background:  transparent url("../img/f_active.png") no-repeat center;
-}
-
+}/*-- /СОЦИАЛЬНЫЕ КНОПКИ --*/
 	/*-- КОНТАКТЫ --*/
 .footer-contacts {
 	float: left;
@@ -1197,7 +1414,7 @@ body > input[type="radio"] {
 	height: 13px;
 	background: transparent url("../img/heart.png") no-repeat;
 	/*opacity: 1;*/
-}
+}/*-- /КОНТАКТЫ --*/
 	/*-- КОПИРАЙТ --*/
 .footer-copyright {
 	float: right;
@@ -1254,7 +1471,8 @@ body > input[type="radio"] {
 	font-weight: 400;
 	font-family: "Roboto", "Tahoma", sans-serif;
 	/*text-decoration: none;*/
-}
+}/*-- /КОПИРАЙТ --*/ /*-- ПОДВАЛ --*/
+
 /*-- ВСПЛЫВАЮЩИЕ МОДАЛЬНЫЕ ОКНА --*/
 	/*-- ОКНО ПОИСКА --*/
 .modal-search {
@@ -1300,7 +1518,7 @@ body > input[type="radio"] {
 }
 .search-form .search:focus {
 	border: 2px solid #8fbdec;
-}
+}/*-- /ОКНО ПОИСКА --*/
 
 	/*-- ОКНО ВХОДА --*/
 .modal-in {
@@ -1401,9 +1619,8 @@ body > input[type="radio"] {
 	color: #323232;
 	font-weight: 400;
 	font-family: "Roboto", "Tahoma", sans-serif;
-}
-	/*-- /ОКНО ВХОДА --*/
-	
+}/*-- /ОКНО ВХОДА --*/
+		
 	/*-- ОКНО ОБРАТНОЙ СВЯЗИ--*/
 .modal-feedback	{
 	position: absolute;
@@ -1546,9 +1763,7 @@ body > input[type="radio"] {
 	background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
 	background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
 	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-}
-
-	/*-- /ОКНО ОБРАТНОЙ СВЯЗИ--*/
+}/*-- /ОКНО ОБРАТНОЙ СВЯЗИ--*/
 	
 	/*-- КАРТА --*/
 .modal-map {

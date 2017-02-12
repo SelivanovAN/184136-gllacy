@@ -45,32 +45,50 @@
 	<!--/Блок хлебных крошек-->
 	</div>
 	<!--Блок выбора мороженных - фильтр-->
-	<div class="selection-ice">
+	<div class="selection-ice clearfix">
+		<h2>Сливочное мороженное</h2>
 		<form action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
-			<h2>Сливочное мороженное</h2>
-			<label class="choice" for="sorting">Сортировка</label>
-			<select name="sorting">
-                <option selected>по популярности</option>
-                <option>другое</option>
-            </select>
-			<label class="choice" for="rucount">Цена: 100 руб. - 500 руб.</label>
-				<br>
-				<input type="range" id="rucount" name="rucount" min="25" max="800" step="25">
-				<output name="ruoutput"></output>
-				<br>
-			<span class="choice">Жирность:</span>
-			<label class="meaning"><input type="radio" name="check-0" value="0">0%</label>
-			<label class="meaning"><input type="radio" name="check-10" value="10" checked>до 10%</label>
-			<label class="meaning"><input type="radio" name="check-30" value="30">до 30%</label>
-			<label class="meaning"><input type="radio" name="check-all" value="50">выше 30%</label>
-				<br>
-			<span class="choice">Наполнители:</span>
-			<br>
-			<label class="meaning"><input type="checkbox" name="chek-choko" checked>шоколадные</label>
-			<label class="meaning"><input type="checkbox" name="chek-sugar" checked>сахарные присыпки</label>
-			<label class="meaning"input type="checkbox" name="chek-choko">фрукты</label>
-			<label class="meaning"><input type="checkbox" name="chek-choko">сиропы</label>
-			<label class="meaning"><input type="checkbox" name="chek-choko">джемы</label>
+			<div class="sorting">
+				<label class="choice" for="sorting">Сортировка:</label><br>
+				<select name="sorting" id="sorting">
+					<option selected>по популярности</option>
+					<option>сначала недорогие</option>
+					<option>сначала дорогие</option>
+					<option>по жирности</option>
+				</select>
+			</div>
+			<div class="price-ice range-filter">
+				<div class="price-controls">
+					<label class="min-price choice">Цена:<input name="min-price" type="text" value="100"> руб.</label>
+					<label class="max-price choice">-<input name="max-price" type="text" value="500"> руб.</label>
+				</div>
+				<div class="range-controls">
+					<div class="scale">
+						<div class="bar" style="margin-left: 20%; width: 50%"></div>
+					</div>
+					<div class="toggle toggle-min"></div>
+					<div class="toggle toggle-max"></div>
+				</div>
+			</div>
+			<div class="fatness"><!--Жирность-->
+				<span class="choice-fatness">Жирность:</span><br>
+				<section class="radiobox">
+					<input type="radio" name="check-0" id="0" value="0"><label class="meaning" for="0">0%</label>
+					<input type="radio" name="check-10" id="10" value="10" checked><label class="meaning" for="10">до 10%</label>
+					<input type="radio" name="check-30" id="30" value="30"><label class="meaning" for="30">до 30%</label>
+					<input type="radio" name="check-all" id="50" value="50"><label class="meaning" for="50">выше 30%</label>
+				</section>
+			</div>
+			<div class="fillers"><!--Наполнители-->
+				<span class="choice">Наполнители:</span><br>
+				<section class="checkbox">
+					<input type="checkbox" name="check-choko" id="check1" checked><label class="meaning" for="check1">шоколадные</label>
+					<input type="checkbox" name="check-sugar" id="check2" checked><label class="meaning" for="check2">сахарные присыпки</label>
+					<input type="checkbox" name="check-choko" id="check3"><label class="meaning" for="check3">фрукты</label>
+					<input type="checkbox" name="check-choko" id="check4"><label class="meaning" for="check4">сиропы</label>
+					<input type="checkbox" name="check-choko" id="check5"><label class="meaning" for="check5">джемы</label>
+				</section>
+			</div>
 			<a class="btn-apply" href="#">Применить</a>
 		</form>
 	<!--/Блок выбора мороженных-->
@@ -216,13 +234,13 @@
 		<!--Форма поиска-->
 	<div class="modal-search">
 		<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-			<input class="search" type="text" name="search" placeholder="Что ищем?">
+			<input class="search" type="search" name="search" placeholder="Что ищем?">
 		</form>
 	</div><!--/Форма поиска-->
 		<!--Форма входа-->
 	<div class="modal-in">
 		<form class="login-form" action="https://echo.htmlacademy.ru" method="get">
-			<input class="email" type="text" name="email" placeholder="Электронная почта">
+			<input class="email" type="email" name="email" placeholder="Электронная почта">
 			<input class="password" type="password"  name="password" placeholder="Пароль">
 			<button class="btn-modal-in" type="submit" title="Войти">Войти</button>
 		</form>
