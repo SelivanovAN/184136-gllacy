@@ -13,12 +13,14 @@ body {
 
 .main a:hover,
 .breadcrumbs a:hover, 
-.footer-catalog a:hover {
+footer a:hover,
+.footer-contacts a:hover {
 	color: #ffbc9e;
 }
 .main a:active,
 .breadcrumbs a:active, 
-.footer-catalog a:active {
+footer a:active,
+.footer-contacts a:active {
 	color: #ffbc9e;
 }
 /*
@@ -275,6 +277,10 @@ body::after {
 	margin-right: 5px;
 	margin-left: 3px;
 }
+
+.user-block .login:hover {
+	display: block;
+}
 .user-block .basket {
 	padding-left: 45px;
 	padding-right: 33px;
@@ -352,6 +358,12 @@ body::after {
 	border-radius: 16px;
 	color: #000000;
 }
+.user-block .login:hover {
+	display: block;
+}
+.user-block .login:hover .modal-in {
+	display: block;
+} 
 /*-- /ВХОД ИКОНКА--*/
 
 	/*-- КОРЗИНА ИКОНКА--*/
