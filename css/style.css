@@ -339,8 +339,7 @@ body::after {
 .user-block .login:hover {
 	background-color: #ffffff;
 	color: #000000;
-}
-/*
+}/*
 .user-block .login:hover .modal-in {
 	display: block;
 }*/
@@ -1859,10 +1858,10 @@ body > input[type="radio"] {
 	/*-- ФОРМА ВХОДА --*/
 .modal-in {
 	position: absolute;
-	top: 50px;
-	right: 55px;
+	top: 60px;
+    right: 183px;
 	border-radius: 5px;
-	display: none;
+	/*display: none;*/
 	width: 277px;
 	height: 214px;
 	background: #f8f7f4;
