@@ -333,7 +333,7 @@ body::after {
 	height: 19px;
 	background: transparent url("../img/to_in.png") no-repeat;
 }
-.user-block .login:hover::after {
+.user-block > .login:hover::after {
 	background:  transparent url("../img/to_in_black.png") no-repeat;	
 }
 .user-block .login:hover {
@@ -374,8 +374,8 @@ body::after {
 }/*
 .user-block	.basket-bye-ice:hover::after {
 	background: transparent url("../img/basket_full.png") no-repeat;
-}
-.user-block .basket-bye-ice:hover {
+}*/
+/*.user-block .basket-bye-ice:hover {
 	background-color: #ffffff;
 	border-radius: 16px;
 	color: #000000;
@@ -1861,7 +1861,7 @@ body > input[type="radio"] {
 	top: 60px;
     right: 183px;
 	border-radius: 5px;
-	/*display: none;*/
+	display: none;
 	width: 277px;
 	height: 214px;
 	background: #f8f7f4;
@@ -1956,7 +1956,13 @@ body > input[type="radio"] {
 	font-weight: 400;
 	font-family: "Roboto", "Tahoma", sans-serif;
 }/*-- /ОКНО ВХОДА --*/
-		
+/*
+.modal-in .login::after {
+	display: none;
+}
+.modal-in .login {
+	padding: 0;
+}*/
 	/*-- ФОРМА ОБРАТНОЙ СВЯЗИ--*/
 .modal-feedback	{
 	position: absolute;
