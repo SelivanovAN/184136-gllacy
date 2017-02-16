@@ -145,7 +145,7 @@ body::after {
 	position: absolute;
 	left: -7px;
 	top: 51px;
-	/*display: none;*/
+	display: none;
     margin: 0;
     padding: 0;
 	width: 143px;
@@ -2128,7 +2128,7 @@ body > input[type="radio"] {
 	padding-top: 20px;
 	padding-left: 21px;
 	padding-right: 14px;
-	display: none;
+	/*display: none;*/
 	background: #f8f7f4;
 	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 	font-size: 13px;
@@ -2147,6 +2147,7 @@ body > input[type="radio"] {
 	/*margin: 0;
 	padding: 0;*/
 	padding: 11px 14px;
+	margin-left: 333px;
 	/*margin-left: 290px;*/
 	font-weight: 700;
 	font-size: 18px;
@@ -2175,6 +2176,56 @@ body > input[type="radio"] {
 	background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
 	background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
 	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+.order-in-basket .order-page {
+	height: 32px;
+	margin: 0;
+	    padding-top: 10px;
+	font-size: 13px;
+	line-height: 16px;
+	color: #323232;
+	font-weight: 400;
+	font-family: "Roboto", "Tahoma", sans-serif;
+}
+.order-in-basket .order-page:nth-child(2) {
+	margin-top: 10px;
+}
+.order-bnt-cancel {
+	vertical-align: top;
+    margin-right: 14px;
+	/*margin-top: 10px;*/
+}
+.order-img-ice {
+    vertical-align: top;
+    margin-right: 14px;
+	margin-top: -10px;
+}
+.order-name-ice {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 32px;
+	width: 216px;
+	height: 32px;
+}
+.order-price-ice {
+	margin-right: 29px;
+	color: #999999;
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: 400;
+	font-family: "Roboto", "Tahoma", sans-serif;
+}
+.order-in-basket hr {
+	margin-top: 19px;
+}
+.order-all-price {
+	display: block;
+	margin-left: 395px;
+	color: #323232;
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 700;
+	font-family: "Roboto", "Tahoma", sans-serif;
 }
 	/*-- КАРТА --*/
 .modal-map {
