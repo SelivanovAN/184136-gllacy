@@ -320,9 +320,12 @@ body::after {
 	background: #ffffff url("../img/search_black.png") no-repeat;
 	background-position: center;
 }
+.user-block .search:hover .modal-search {
+	display: block;
+}/*
 .user-block .search:hover::after .modal-search {
 	display: block;
-}
+}*/
 /*
 .user-block .modal-search:hover .search {
 	display: block;
@@ -1829,7 +1832,7 @@ body > input[type="radio"] {
 	color: #999999;
 	font-weight: 400;
 	font-family: "Roboto", "Tahoma", sans-serif;
-	z-index: 12;
+	/*z-index: 12;*/
 }
 .modal-search  .search-form {
 	margin-left: 15px;
