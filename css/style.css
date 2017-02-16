@@ -319,10 +319,9 @@ body::after {
 .user-block .search:hover::after {
 	background: #ffffff url("../img/search_black.png") no-repeat;
 	background-position: center;
-	display: block;
 }
-.user-block ..search:hover::after:hover .modal-search {
-	
+.user-block .search:hover::after .modal-search {
+	display: block;
 }
 /*
 .user-block .modal-search:hover .search {
