@@ -333,16 +333,16 @@ body::after {
 	height: 19px;
 	background: transparent url("../img/to_in.png") no-repeat;
 }
-.user-block > .login:hover::after {
+.user-block .login:hover::after {
 	background:  transparent url("../img/to_in_black.png") no-repeat;	
 }
 .user-block .login:hover {
 	background-color: #ffffff;
 	color: #000000;
-}/*
-.user-block .login:hover .modal-in {
+}
+.user-block .login:hover .link-modal-in .modal-in {
 	display: block;
-}*/
+}
 /*-- /ВХОД ИКОНКА--*/
 
 	/*-- КОРЗИНА ИКОНКА--*/
