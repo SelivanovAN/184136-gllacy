@@ -1589,8 +1589,6 @@ body > input[type="radio"] {
 }
 .goods .case-catalog:nth-child(4n){
 	margin-right: 0;
-}
-.goods .case-catalog:nth-child(4n) {
 	margin-right: -13px;
 }
 .case-catalog .big-ice {
@@ -2121,12 +2119,12 @@ body > input[type="radio"] {
 .order-in-basket {
 	position: absolute;
 	top: 60px;
-	right: 55px;
-	width: 503px;
+	right: 58px;
+	width: 509px;
 	height: 222px;
-	border-radius: 15px;
+	border-radius: 5px;
 	padding-top: 20px;
-	padding-left: 21px;
+	padding-left: 16px;
 	padding-right: 14px;
 	/*display: none;*/
 	background: #f8f7f4;
@@ -2147,7 +2145,7 @@ body > input[type="radio"] {
 	/*margin: 0;
 	padding: 0;*/
 	padding: 11px 14px;
-	margin-left: 333px;
+	margin-left: 338px;
 	/*margin-left: 290px;*/
 	font-weight: 700;
 	font-size: 18px;
@@ -2180,7 +2178,7 @@ body > input[type="radio"] {
 .order-in-basket .order-page {
 	height: 32px;
 	margin: 0;
-	    padding-top: 10px;
+	padding-top: 9px;
 	font-size: 13px;
 	line-height: 16px;
 	color: #323232;
@@ -2188,7 +2186,7 @@ body > input[type="radio"] {
 	font-family: "Roboto", "Tahoma", sans-serif;
 }
 .order-in-basket .order-page:nth-child(2) {
-	margin-top: 10px;
+	margin-top: 12px;
 }
 .order-bnt-cancel {
 	vertical-align: top;
@@ -2203,12 +2201,12 @@ body > input[type="radio"] {
 .order-name-ice {
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 32px;
+	margin-right: 27px;
 	width: 216px;
 	height: 32px;
 }
 .order-price-ice {
-	margin-right: 29px;
+	margin-right: 25px;
 	color: #999999;
 	font-size: 13px;
 	line-height: 16px;
@@ -2216,11 +2214,13 @@ body > input[type="radio"] {
 	font-family: "Roboto", "Tahoma", sans-serif;
 }
 .order-in-basket hr {
-	margin-top: 19px;
+	margin-top: 16px;
 }
 .order-all-price {
 	display: block;
-	margin-left: 395px;
+	margin-top: 12px;
+    margin-bottom: 13px;
+    margin-left: 401px;
 	color: #323232;
 	font-size: 15px;
 	line-height: 18px;
