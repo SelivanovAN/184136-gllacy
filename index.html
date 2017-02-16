@@ -34,9 +34,30 @@
 			  </ul>
 			</nav>
 			<div class="user-block">
-				<a class="search modal-searching" href="#">Поиск</a>
-				<a class="login" href="#">Вход</a>
+				<a class="search" href="#">Поиск
+				<!--Форма поиска-->
+					<div class="modal-search">
+						<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+						<input class="search" type="search" name="search" placeholder="Что ищем?">
+						</form>
+					</div><!--/Форма поиска-->
+				</a>
+				<a class="login" href="#">Вход
+				<!--Форма входа-->
+					<div class="modal-in">
+						<form class="login-form" action="https://echo.htmlacademy.ru" method="get">
+							<input class="email" type="email" name="email" placeholder="Электронная почта">
+							<input class="password" type="password"  name="password" placeholder="Пароль">
+							<button class="btn-modal-in" type="submit" title="Войти">Войти</button>
+						</form>
+						<section class="restore-registration">
+							<a class="restore" href="#">Забыли пароль?</a><br>
+							<a class="registration" href="#">Новая регистрация</a>
+						</section>
+					</div><!--Форма входа-->
+				</a>
 				<a class="basket" href="#">Пусто</a>
+				
 			</div>
 			<div class="timework-tel">
 				<span class="timework">С 10 до 20, ежедневно</span>
@@ -197,24 +218,8 @@
 	<!--/Блок подвала-->
 	</div><!--/site-wrapper-->
 	<!--Модальные формы-->
-		<!--Форма поиска-->
-	<div class="modal-search">
-		<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-			<input class="search" type="search" name="search" placeholder="Что ищем?">
-		</form>
-	</div><!--/Форма поиска-->
-		<!--Форма входа-->
-	<div class="modal-in">
-		<form class="login-form" action="https://echo.htmlacademy.ru" method="get">
-			<input class="email" type="email" name="email" placeholder="Электронная почта">
-			<input class="password" type="password"  name="password" placeholder="Пароль">
-			<button class="btn-modal-in" type="submit" title="Войти">Войти</button>
-		</form>
-		<section class="restore-registration">
-			<a class="restore" href="#">Забыли пароль?</a><br>
-			<a class="registration" href="#">Новая регистрация</a>
-		</section>
-    </div><!--Форма входа-->
+	
+	
 		<!--Форма карты-->
 	<div class="modal-map">
 		<button class="modal-map-close" type="button" title="Закрыть">Закрыть</button>

@@ -144,7 +144,7 @@ body::after {
 	position: absolute;
 	left: -7px;
 	top: 51px;
-	/*display: none;*/
+	display: none;
     margin: 0;
     padding: 0;
 	width: 143px;
@@ -322,23 +322,7 @@ body::after {
 }
 .user-block .search:hover .modal-search {
 	display: block;
-}/*
-.user-block .search:hover::after .modal-search {
-	display: block;
-}*/
-/*
-.user-block .modal-search:hover .search {
-	display: block;
-}*/
-/*
-.user-block .search:hover  {
-	display: block;
-}*//*
-.user-block .search:hover .modal-search {
-	display: block;
-}*/
-/*-- /ПОИСК ИКОНКА--*/
-
+}/*-- /ПОИСК ИКОНКА--*/
 	/*-- ВХОД ИКОНКА--*/
 .user-block .login::after {
 	content: "";
@@ -350,14 +334,16 @@ body::after {
 	background: transparent url("../img/to_in.png") no-repeat;
 }
 .user-block .login:hover::after {
-	background: transparent url("../img/to_in_black.png") no-repeat;
-	/*border-radius: 16px;*/
+	background:  transparent url("../img/to_in_black.png") no-repeat;	
 }
 .user-block .login:hover {
 	background-color: #ffffff;
 	color: #000000;
-	/*display: block;*/
-} 
+}
+/*
+.user-block .login:hover .modal-in {
+	display: block;
+}*/
 /*-- /ВХОД ИКОНКА--*/
 
 	/*-- КОРЗИНА ИКОНКА--*/
@@ -1820,19 +1806,25 @@ body > input[type="radio"] {
 .modal-search {
 	display: none;
 	position: absolute;
-	top: 50px;
-	right: 295px;
-	border-radius: 15px;
+	width: 341px;
+	top: 36px;
+	right: 1px;
+	border-radius: 5px;
 	width: 341px;
 	height: 84px;
 	background: #f8f7f4;
-	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	font-size: 14px;
 	line-height: 24px;
 	color: #999999;
 	font-weight: 400;
 	font-family: "Roboto", "Tahoma", sans-serif;
 	/*z-index: 12;*/
+}
+.modal-search input[type="search"] {
+	width: 312px;
+	height: 43px;
+	background-color: #ffffff;
 }
 .modal-search  .search-form {
 	margin-left: 15px;
@@ -1863,12 +1855,13 @@ body > input[type="radio"] {
 	border: 2px solid #8fbdec;
 }/*-- /ОКНО ПОИСКА --*/
 
+
 	/*-- ФОРМА ВХОДА --*/
 .modal-in {
 	position: absolute;
 	top: 50px;
-	right: 205px;
-	border-radius: 15px;
+	right: 55px;
+	border-radius: 5px;
 	display: none;
 	width: 277px;
 	height: 214px;
@@ -1930,12 +1923,13 @@ body > input[type="radio"] {
 	text-decoration: none;
 	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 	background: #f26843;
-	background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
 	background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+	background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
 	background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
 	border: none;
 	border-radius: 100px;
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	outline: none;
 }
 .btn-modal-in:hover {
 	background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
@@ -1969,7 +1963,7 @@ body > input[type="radio"] {
 	position: absolute;
 	top: 500px;
 	right: 295px;
-	border-radius: 15px;
+	border-radius: 5px;
 	display: none;
 	width: 477px;
 	height: 442px;
@@ -1991,6 +1985,7 @@ body > input[type="radio"] {
 	background-color: transparent;
 	border: 0;
 	cursor: pointer;
+	outline: none;
 }
 .btn-modal-feedback-close::before,
 .btn-modal-feedback-close::after {
