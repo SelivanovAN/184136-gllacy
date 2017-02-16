@@ -62,11 +62,10 @@ body::after {
 }
 .main-navigation {
 	float: left;
-	width: 384px;
+	width: 660px;
 	min-height: 64px;
 	margin-top: 9px;
 	margin-bottom: 6px;
-	margin-right: 70px;
 }
 .main-nav {
 	list-style: none;
@@ -145,7 +144,7 @@ body::after {
 	position: absolute;
 	left: -7px;
 	top: 51px;
-	display: none;
+	/*display: none;*/
     margin: 0;
     padding: 0;
 	width: 143px;
@@ -226,11 +225,10 @@ body::after {
 	color: #ffffff;
 }
 .user-block {
-	float: left;
+	float: right;
 	max-width: 328px;
-	margin-left: 267px;
 	margin-top: 9px;
-	margin-bottom: 28px;
+	padding-bottom: 24px;
 }
 .user-block .search  	{
 	position: relative;
@@ -243,6 +241,13 @@ body::after {
 	color: #ffffff;
 	font-size: 14px;
 	font-family: "Roboto", "Tahoma", sans-serif;
+	padding-left: 13px;
+	padding-right: 20px;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	margin-right: 3px;
+	background: #9db1a5;
+	border-radius: 100%;
 }
 .user-block .login,
 .user-block .basket {
@@ -260,15 +265,6 @@ body::after {
 	font-family: "Roboto", "Tahoma", sans-serif;
 	vertical-align: top;	
 }
-.user-block .search {
-	padding-left: 13px;
-	padding-right: 20px;
-	padding-bottom: 8px;
-	padding-top: 8px;
-	margin-right: 3px;
-	background: #9db1a5;
-	border-radius: 100%;
-}
 .user-block .login {
 	padding-left: 44px;
 	padding-right: 17px;
@@ -276,10 +272,6 @@ body::after {
 	border-radius: 18px;
 	margin-right: 5px;
 	margin-left: 3px;
-}
-
-.user-block .login:hover {
-	display: block;
 }
 .user-block .basket {
 	padding-left: 45px;
@@ -325,19 +317,24 @@ body::after {
 	border-radius: 100%;
 }
 .user-block .search:hover::after {
-	background: transparent url("../img/search_black.png") no-repeat;
+	background: #ffffff url("../img/search_black.png") no-repeat;
 	background-position: center;
-}
-.user-block .search:hover  {
-	background-color: #ffffff;
-	border-radius: 100%;
-}
-.user-block .search:hover  {
 	display: block;
 }
-.user-block .search:hover  .modal-search{
-	display: block;
+.user-block ..search:hover::after:hover .modal-search {
+	
 }
+/*
+.user-block .modal-search:hover .search {
+	display: block;
+}*/
+/*
+.user-block .search:hover  {
+	display: block;
+}*//*
+.user-block .search:hover .modal-search {
+	display: block;
+}*/
 /*-- /ПОИСК ИКОНКА--*/
 
 	/*-- ВХОД ИКОНКА--*/
@@ -352,17 +349,12 @@ body::after {
 }
 .user-block .login:hover::after {
 	background: transparent url("../img/to_in_black.png") no-repeat;
+	/*border-radius: 16px;*/
 }
 .user-block .login:hover {
 	background-color: #ffffff;
-	border-radius: 16px;
 	color: #000000;
-}
-.user-block .login:hover {
-	display: block;
-}
-.user-block .login:hover .modal-in {
-	display: block;
+	/*display: block;*/
 } 
 /*-- /ВХОД ИКОНКА--*/
 
@@ -406,7 +398,7 @@ body::after {
 	/*-- ВРЕМЯ --*/
 .timework-tel {
 	float: right;
-	margin-top: -14px;
+	margin-top: -9px;
 	width: 175px;
 	text-align: right;
 }
@@ -607,14 +599,12 @@ body > input[type="radio"] {
 
 .promo-action {
 	float: left;
-	width: 519px;
-	height: 188px;
+	width: 540px;
 	margin-right: 26px;
 	border-radius: 15px;
 	padding-top: 15px;
 	padding-left: 20px;
-	padding-right: 21px;
-    padding-bottom: 24px;
+    padding-bottom: 23px;
 }
 .promo-action:last-child {
 	margin-right: 0;
@@ -1840,6 +1830,7 @@ body > input[type="radio"] {
 	color: #999999;
 	font-weight: 400;
 	font-family: "Roboto", "Tahoma", sans-serif;
+	z-index: 12;
 }
 .modal-search  .search-form {
 	margin-left: 15px;
@@ -2126,7 +2117,7 @@ body > input[type="radio"] {
 	padding-top: 20px;
 	padding-left: 16px;
 	padding-right: 14px;
-	/*display: none;*/
+	display: none;
 	background: #f8f7f4;
 	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 	font-size: 13px;
