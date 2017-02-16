@@ -62,7 +62,7 @@ body::after {
 }
 .main-navigation {
 	float: left;
-	width: 500px;
+	width: 600px;
 	min-height: 64px;
 	margin-top: 9px;
 	margin-bottom: 6px;
@@ -99,12 +99,12 @@ body::after {
 	border-radius: 16px;
 	border-bottom: none;
 }
-.main-nav  li a:hover {
+.main-nav  .border-li-one-page:hover {
 	color: #000000;
 	background-color: #ffffff;
 	border-radius: 20px;
 }
-.main-nav  li a:active {
+.main-nav  .border-li-one-page:active {
 	background: -webkit-linear-gradient(top, #ededed 0%, #ededed 100%);
 	background:    -moz-linear-gradient(top, #ededed 0%, #ededed 100%);
 	background:         linear-gradient(to bottom, #ededed 0%, #ededed 100%);
@@ -156,13 +156,15 @@ body::after {
 }
 .main-nav > li:hover .sub-menu-catalog  {
 	display: block;
+	padding: 0 7px;
 }
 .main-nav .sub-menu-catalog {
+	width: 129px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	font-size: 0;
-	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 .main-nav  .sub-menu-catalog a {
 	display: block;
@@ -171,7 +173,7 @@ body::after {
 	padding: 0;
 	/*margin-left: 21px;*/
 	padding: 9px 0px;
-	padding-left: 21px;
+	padding-left: 14px;
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 400;
@@ -181,7 +183,7 @@ body::after {
 }
 .main-nav  .sub-menu-catalog  li:first-child a {
 	/*margin-top: 10px;*/
-	padding-bottom: 5px;
+	/*padding-bottom: 5px;*/
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 700;
@@ -191,7 +193,7 @@ body::after {
 }
 .main-nav  .sub-menu-catalog  li:first-child {
 	border: none;
-	border: 1px solid #d1d0ce;
+	border-bottom: 1px solid #d1d0ce;
 }
 .main-nav > .sub-menu-catalog a:active {
 	background-color: none;
@@ -200,7 +202,7 @@ body::after {
 .main-nav  .sub-menu-catalog  li:last-child a {
 	/*padding-top: 5px;
 	padding-bottom: 12px;*/
-	margin-bottom: 14px;
+	/*margin-bottom: 14px;*/
 }
 .main-nav  .sub-menu-catalog  li:hover a {
 	background-color: #fbded7;
@@ -229,7 +231,7 @@ body::after {
 }
 .user-block {
 	float: right;
-	max-width: 328px;
+	max-width: 428px;
 	margin-top: 9px;
 	padding-bottom: 24px;
 }
@@ -253,7 +255,9 @@ body::after {
 	border-radius: 100%;
 }
 .user-block .login,
-.user-block .basket {
+.user-block .basket,
+.link-modal,
+.link-modal-basket {
 	position: relative;
 	display: inline-block;
 	margin: 0;
@@ -268,6 +272,13 @@ body::after {
 	font-family: "Roboto", "Tahoma", sans-serif;
 	vertical-align: top;	
 }
+.link-modal {
+	position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+}
 .user-block .login {
 	padding-left: 44px;
 	padding-right: 17px;
@@ -281,6 +292,13 @@ body::after {
 	padding-right: 33px;
 	background: #9db1a5;
 	border-radius: 100px;
+}
+.link-modal-basket {
+	position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
 }
 .user-block .basket-bye-ice {
 	position: relative;
@@ -322,10 +340,10 @@ body::after {
 .user-block .search:hover::after {
 	background: #ffffff url("../img/search_black.png") no-repeat;
 	background-position: center;
-}/*
+}
 .user-block .search:hover .modal-search {
 	display: block;
-}*/
+}
 /*-- /ПОИСК ИКОНКА--*/
 	/*-- ВХОД ИКОНКА--*/
 .user-block .login::after {
@@ -343,11 +361,10 @@ body::after {
 .user-block .login:hover {
 	background-color: #ffffff;
 	color: #000000;
-}/*
+}
 .link-modal:hover .modal-in {
 	display: block;
-}*/
-/*-- /ВХОД ИКОНКА--*/
+}/*-- /ВХОД ИКОНКА--*/
 
 	/*-- КОРЗИНА ИКОНКА--*/
 .user-block .basket::after {
@@ -375,16 +392,16 @@ body::after {
 	width: 21px;
 	height: 19px;
 	background: transparent url("../img/basket_full.png") no-repeat;
-}/*
+}
 .link-modal-basket:hover .order-in-basket {
 	display: block;
-}*/
-/*-- /КОРЗИНА ИКОНКА--*/
+}/*-- /КОРЗИНА ИКОНКА--*/
 
 	/*-- ВРЕМЯ --*/
 .timework-tel {
 	position: absolute;
-	right: 0;
+	right: 58px;
+    top: 78px;
 	margin-top: -9px;
 	width: 175px;
 	text-align: right;
@@ -489,7 +506,7 @@ body > input[type="radio"] {
 }
 .slider {
 	position: relative;
-	padding-top: 273px;
+	padding-top: 312px;
 	text-align: center;
 	color: #ffffff;
 }
@@ -586,12 +603,13 @@ body > input[type="radio"] {
 
 .promo-action {
 	float: left;
-	width: 540px;
+	width: 519px;
 	margin-right: 26px;
 	border-radius: 15px;
 	padding-top: 15px;
 	padding-left: 20px;
     padding-bottom: 23px;
+	padding-right: 21px;
 }
 .promo-action:last-child {
 	margin-right: 0;
@@ -695,7 +713,7 @@ body > input[type="radio"] {
 }/*-- /БЛОК ПРОМО АКЦИИ --*/
 	/*-- БЛОК САМЫХ ПОКУПАЕМЫХ МОРОЖЕННЫХ --*/
 .catalog {	
-	margin-top: 35px;
+	margin-top: 34px;
 }
 .catalog .catalog-ice {
 	float: left;
@@ -964,10 +982,12 @@ body > input[type="radio"] {
 }
 .news-sub .news {
 	float: left;
-	width: 540px;
-    height: 197px;
+	width: 520px;
+    height: 174px;
     padding-top: 23px;
+    padding-bottom: 23px;
     padding-left: 20px;
+    padding-right: 20px;
 	border-radius: 15px;
 	background-image: url("../img/news.jpg");
 	background-repeat: no-repeat;
@@ -1075,8 +1095,9 @@ body > input[type="radio"] {
 }
 .driving-address .driving {
 	display: inline-block;
-	width: 302px;
-	height: 305px;
+	width: 250px;
+    height: 305px;
+    padding: 0 26px;
 	background-color: white;
 	border-radius: 15px;
 	position: relative;
@@ -1087,7 +1108,6 @@ body > input[type="radio"] {
 .driving  .line-1,
 .driving  .line-2 {
 	display: inline-block;
-	margin-left: 26px;
 	font-size: 14px;
 	line-height: 20px;
 	color: #000000;
@@ -1096,7 +1116,6 @@ body > input[type="radio"] {
 }
 .driving  .line-2 {
 	display: inline-block;
-	margin-left: 26px;
 	font-size: 18px;
 	line-height: 24px;
 	color: #000000;
@@ -1127,7 +1146,6 @@ body > input[type="radio"] {
 	display: inline-block;
 	width: 252px;
 	margin-top: 26px;
-	margin-left: 26px;
 	margin-right: 0px;
 	margin-bottom: 30px;
 	padding: 8px 0px;
@@ -1858,8 +1876,8 @@ body > input[type="radio"] {
 	/*-- ФОРМА ВХОДА --*/
 .modal-in {
 	position: absolute;
-	top: 60px;
-    right: 183px;
+	top: 50px;
+    right: 3px;
 	border-radius: 5px;
 	display: none;
 	width: 277px;
@@ -1883,9 +1901,9 @@ body > input[type="radio"] {
 	width: 224px;
 	border-radius: 15px;
 	margin: 0;
-	margin-bottom: 10px;
-	padding: 10px 0px;
-	padding-left: 15px;
+	margin-bottom: 20px;
+	padding: 9px 0px;
+	padding-left: 13px;
 	padding-right: 0;
 	font-size: 14px;
 	line-height: 24px;
