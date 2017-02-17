@@ -113,7 +113,7 @@ body::after {
 .main-navigation  .border-li-one::after {
 	content: "";
 	position: absolute;
-	top: 47px;
+	top: 38px;
 	margin-left: 14px;
 	width: 60px;
 	height: 1px;
@@ -123,7 +123,7 @@ body::after {
 .main-navigation  .border-li-two::after {
 	content: "";
 	position: absolute;
-	top: 47px;
+	top: 38px;
 	margin-left: 14px;
 	width: 142px;
 	height: 1px;
@@ -133,7 +133,7 @@ body::after {
 .main-navigation  .border-li-tree::after {
 	content: "";
 	position: absolute;
-	top: 47px;
+	top: 38px;
 	margin-left: 16px;
 	width: 90px;
 	height: 1px;
@@ -233,7 +233,7 @@ body::after {
 	float: right;
 	max-width: 428px;
 	margin-top: 9px;
-	padding-bottom: 24px;
+	/*padding-bottom: 24px;*/
 }
 .user-block .search  	{
 	position: relative;
@@ -427,7 +427,7 @@ body::after {
 	float: left;
 	width: 300px;
 	height: 20px;
-	margin-top: 16px;
+	margin-top: 20px;
 }
 .bread-main-nav {
     list-style: none;
