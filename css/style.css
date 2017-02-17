@@ -813,12 +813,13 @@ body > input[type="radio"] {
 	/*-- БЛОК ОПИСАНИЯ КОМПАНИИ --*/
 .description {
 	width: 1116px;
-	height: 283px;
+	height: 272px;
 	background-image: url("../img/wafer.jpg");
 	background-repeat: no-repeat;
 	padding-top: 24px;
 	padding-left: 20px;
 	padding-right: 10px;
+	padding-bottom: 10px;
 	border-radius: 15px;	
 }
 .description .about {
@@ -917,8 +918,8 @@ body > input[type="radio"] {
 .news-sub {
 	width: 1146px;
 	height: 220px;
-	margin-top: 38px;
-	margin-bottom: 38px;
+	margin-top: 39px;
+	margin-bottom: 40px;
 }
 .news-sub .news {
 	float: left;
