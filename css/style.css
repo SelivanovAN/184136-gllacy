@@ -6,9 +6,6 @@ body {
 	font-weight: 400;
 	font-family: "Roboto", "Tahoma", sans-serif;
 	background-color: #849d8f;
-	/*background-image: url("../img/advertising_1.png");
-	background-repeat: no-repeat;
-	background-position: top center;*/
 }
 
 .main a:hover,
@@ -23,18 +20,6 @@ footer a:active,
 .footer-contacts a:active {
 	color: #ffbc9e;
 }
-/*
-body::before,
-body::after {
-	content: "";
-	visibility: hidden;
-}
-body::before {
-	background-image: url("../img/advertising_2.png");
-}
-body::after {
-	background-image: url("../img/advertising_3.png");
-}*/
 .clearfix {
 	content: "";
     display: table;
@@ -50,6 +35,7 @@ body::after {
 	margin: 0 auto;
 	padding: 0 0;
 }
+
 /*--ШАПКА--*/
 .header-logo {
 	float: left;
@@ -222,7 +208,8 @@ body::after {
 .user-block {
 	float: right;
 	max-width: 428px;
-	margin-top: 9px;
+	/*margin-top: 9px;*/
+	margin-top: 23px;
 }
 .user-block .login,
 .user-block .basket,
@@ -233,7 +220,7 @@ body::after {
 	vertical-align: top;
 	display: inline-block;
 	margin: 0;
-	margin-top: 14px;
+	/*margin-top: 14px;*/
 	padding: 8px 0px;
 	text-decoration: none;
 	font-size: 14px;
@@ -257,7 +244,7 @@ body::after {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0;
-	margin-top: 14px;
+	/*margin-top: 14px;*/
 	padding-left: 13px;
     padding-right: 20px;
     padding-bottom: 8px;
@@ -290,7 +277,7 @@ body::after {
 	position: relative;
 	display: inline-block;
 	margin: 0;
-	margin-top: 14px;
+	/*margin-top: 14px;*/
 	padding: 8px 0px;
 	padding-left: 43px;
     padding-right: 17px;
@@ -309,6 +296,7 @@ body::after {
 	/*-- ПОИСК ИКОНКА--*/
 .user-block .search {
 	font-size: 0;
+	height: 16px;
 }
 .user-block .search::after {
 	content: "";
@@ -331,8 +319,8 @@ body::after {
 }
 .user-block .link-modal-search:hover .modal-search {
 	display: block;
-}
-/*-- /ПОИСК ИКОНКА--*/
+}/*-- /ПОИСК ИКОНКА--*/
+	
 	/*-- ВХОД ИКОНКА--*/
 .user-block .login::after {
 	content: "";
@@ -585,8 +573,8 @@ body > input[type="radio"] {
 #btn-3:checked ~ .site-wrapper label[for="btn-3"] {
 	background-color: #ffffff;
 }/*-- /СЛАЙДЕР --*/
+	
 	/*-- БЛОК ПРОМО АКЦИИ --*/
-
 .promo-action {
 	float: left;
 	width: 519px;
@@ -697,6 +685,7 @@ body > input[type="radio"] {
 	background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
 	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }/*-- /БЛОК ПРОМО АКЦИИ --*/
+	
 	/*-- БЛОК САМЫХ ПОКУПАЕМЫХ МОРОЖЕННЫХ --*/
 .catalog {	
 	margin-top: 34px;
@@ -809,7 +798,7 @@ body > input[type="radio"] {
 	background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
 	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }/*-- /БЛОК САМЫХ ПОКУПАЕМЫХ МОРОЖЕННЫХ --*/
-
+	
 	/*-- БЛОК ОПИСАНИЯ КОМПАНИИ --*/
 .description {
 	width: 1116px;
