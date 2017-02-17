@@ -1724,8 +1724,7 @@ body > input[type="radio"] {
 	height: 44px;
 }
 .search-form .search-input {
-	width: 295px;
-	/*width: 309px; IE норм работает с типом search а хром хреново*/
+	width: 295px; /*width: 309px; IE норм работает с типом search а хром хреново*/
 	height: 42px;
 	margin: 0;
 	padding-left: 14px;
