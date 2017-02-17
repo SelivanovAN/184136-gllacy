@@ -1836,7 +1836,7 @@ body > input[type="radio"] {
 	color: #999999;
 	font-weight: 400;
 	font-family: "Roboto", "Tahoma", sans-serif;
-	/*z-index: 12;*/
+	z-index: 12;
 }
 .modal-search input[type="search"] {
 	width: 312px;
@@ -1889,6 +1889,7 @@ body > input[type="radio"] {
 	color: #999999;
 	font-weight: 400;
 	font-family: "Roboto", "Tahoma", sans-serif;
+	z-index: 12;
 }
 .modal-in .login-form {
 	padding-left: 19px;
@@ -1991,6 +1992,7 @@ body > input[type="radio"] {
 	color: #999999;
 	font-weight: 400;
 	font-family: "Roboto", "Tahoma", sans-serif;
+	z-index: 12;
 }
 .btn-modal-feedback-close {
 	position: absolute;
@@ -2139,6 +2141,7 @@ body > input[type="radio"] {
 	color: #999999;
 	font-weight: 400;
 	font-family: "Roboto", "Tahoma", sans-serif;
+	z-index: 12;
 }
 .ice-order {
 	margin-bottom: 20px;
