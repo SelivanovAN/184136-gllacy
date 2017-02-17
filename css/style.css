@@ -156,7 +156,7 @@ body::after {
 }
 .main-nav > li:hover .sub-menu-catalog  {
 	display: block;
-	padding: 0 7px;
+	/*padding: 0 7px;*/
 }
 .main-nav .sub-menu-catalog {
 	width: 129px;
@@ -190,10 +190,12 @@ body::after {
 	color: #000000;
 	font-family: "Roboto", "Tahoma", sans-serif;
 	text-decoration: none;
+	border-bottom: 1px solid #d1d0ce;
 }
 .main-nav  .sub-menu-catalog  li:first-child {
 	border: none;
-	border-bottom: 1px solid #d1d0ce;
+	padding: 0 7px;
+	/*border-bottom: 1px solid #d1d0ce;*/
 }
 .main-nav > .sub-menu-catalog a:active {
 	background-color: none;
