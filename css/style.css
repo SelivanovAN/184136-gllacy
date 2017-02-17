@@ -1480,6 +1480,7 @@ body > input[type="radio"] {
 	margin-right: 13px;
 	margin-left: -13px;
 	/*margin-top: 40px;*/
+	margin-bottom: 32px;
 	padding-top: 6px;
 	/*padding-bottom: 20px;*/
 	border-top-right-radius: 7px;
@@ -1489,13 +1490,13 @@ body > input[type="radio"] {
 }
 .ice-cost-catalog {
 	position: relative;
-    height: 357px;
+    height: 323px;
 }
 .goods .cost {
 	/*position: relative;*/
 	position: absolute;
 	/*bottom: 64px;*/
-	bottom: 98px;
+	bottom: 64px;
 	left: 13px;
 	text-align: left;
 	/*display: inline-block;
@@ -1531,8 +1532,8 @@ body > input[type="radio"] {
     padding-left: 18px;
     padding-right: 18px;
 	/*bottom: 37px;*/
-	margin-bottom: 15px;
-    margin-top: 6px;
+	/*margin-bottom: 15px;*/
+    margin-top: 7px;
 	text-align: center;
 	font-size: 16px;
 	line-height: 22px;
@@ -1545,8 +1546,9 @@ body > input[type="radio"] {
 	position: absolute;
 	width: 293px;
 	/*height: 32px;*/
-	height: 42px;
+	height: 57px;
 	/*height: 30px;*/
+	    padding-top: 20px;
 	background-color: rgba(167, 184,173, 0.3);
 	/*border-radius: 15px;*/
 	border-bottom-right-radius: 7px;
@@ -1555,8 +1557,8 @@ body > input[type="radio"] {
 	z-index: 12;
 }
 .case-catalog .btn-show-catalog {
-	position: relative;
-    top: -14px;
+	/*position: relative;
+    top: -14px;*/
 	/*left: 46px;
 	bottom: -250px;*/
 	width: 168px;
@@ -1610,7 +1612,7 @@ body > input[type="radio"] {
 .goods .catalog-pages {
 	float: right;
 	/*margin-bottom: 50px;*/
-	margin-top: 46px;
+	margin-top: 52px;
 }
 .pages-ices {
 	margin: 0;
