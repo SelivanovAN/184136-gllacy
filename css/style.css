@@ -2127,8 +2127,8 @@ body > input[type="radio"] {
 	/*-- ФОРМА НАЛИЧИЯ ТОВАРА В КОРЗИНЕ--*/
 .order-in-basket {
 	position: absolute;
-	top: 60px;
-	right: 58px;
+	top: 51px;
+	right: 0px;
 	width: 509px;
 	height: 222px;
 	border-radius: 5px;
