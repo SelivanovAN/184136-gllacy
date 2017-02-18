@@ -379,7 +379,7 @@ min-height: 79px;
 	/*-- ВРЕМЯ --*/
 .timework-tel {
 	position: absolute;
-	right: 58px;
+	margin-left: 971px;
     top: 78px;
 	margin-top: -9px;
 	width: 175px;
