@@ -11,7 +11,13 @@ var closeFeedback = popup.querySelector(".btn-modal-feedback-close");
         event.preventDefault();
     popup.classList.remove("modal-content-show");
       });
-	  
+    window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal-content-show")) {
+            popup.classList.remove("modal-content-show");
+          }
+        }
+      });  
 /*var mapOpen = document.querySelector(".js-map-openk");
 var mapPopup = document.querySelector(".modal-map");
 var mapClose = mapPopup.querySelector(".modal-map-close");
