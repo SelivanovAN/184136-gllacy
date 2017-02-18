@@ -12,6 +12,7 @@ body {
 .breadcrumbs a:hover, 
 footer a:hover,
 .footer-contacts a:hover,
+.catalog-ice-index a,
 .ice-cost-catalog a {
 	color: #ffbc9e;
 }
@@ -19,6 +20,7 @@ footer a:hover,
 .breadcrumbs a:active, 
 footer a:active,
 .footer-contacts a:active,
+.catalog-ice-index a,
 .ice-cost-catalog a  {
 	color: #ffbc9e;
 }
@@ -694,7 +696,7 @@ body > input[type="radio"] {
 .catalog {	
 	margin-top: 34px;
 }
-.ice-cost-index {
+.catalog-ice-index {
 	position: relative;
 }
 .catalog .catalog-ice {
