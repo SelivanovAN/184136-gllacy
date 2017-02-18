@@ -1956,7 +1956,7 @@ min-height: 71px;
 	border: 2px solid #8fbdec;
 }
 .feedback-form .feedback-text  {
-	width: 412px;
+	width: 413px;
 	height: 141px;
 	border-radius: 15px;
 	margin: 0;
@@ -1972,6 +1972,7 @@ min-height: 71px;
 	font-family: "Roboto", "Tahoma", sans-serif;
 	border-radius: 5px;
 	border: 1px solid #d3d3d2;
+	box-sizing: border-box;
 }
 .feedback-form .feedback-text:hover {
 	border: 2px solid #c7c6c5;
