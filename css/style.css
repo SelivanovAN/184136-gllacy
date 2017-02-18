@@ -379,7 +379,7 @@ min-height: 79px;
 	/*-- ВРЕМЯ --*/
 .timework-tel {
 	position: absolute;
-	right: 58px;
+	margin-left: 971px;
     top: 78px;
 	margin-top: -9px;
 	width: 175px;
@@ -725,6 +725,7 @@ body > input[type="radio"] {
 	line-height: 45px;
 	color: #ffffff;
 	font-weight: 700;
+	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 	font-family: "Roboto", "Tahoma", sans-serif;
 	text-shadow: 1px 1px 3px #5a6762;
 	cursor: pointer;
@@ -1436,9 +1437,11 @@ body > input[type="radio"] {
 	line-height: 45px;
 	color: #ffffff;
 	font-weight: 700;
+	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 	font-family: "Roboto", "Tahoma", sans-serif;
 	text-shadow: 1px 1px 3px #5a6762;
 	cursor: pointer;
+	
 }
 .goods .weight {
 	font-size: 32px;
@@ -1634,7 +1637,7 @@ min-height: 71px;
 .footer-contacts {
 	float: left;
 	width: 334px;
-	margin-left: 210px;
+	margin-left: 212px;
 	text-align: left;
 	margin-top: 15px;
 }
@@ -1695,7 +1698,7 @@ min-height: 71px;
 }
 .footer-copyright p {
 	margin-left: 30px;
-    margin-top: -5px;
+    margin-top: -4px;
 	font-size: 12px;
 	line-height: 18px;
 	color: #ffffff;
@@ -1866,9 +1869,9 @@ min-height: 71px;
 	/*-- ФОРМА ОБРАТНОЙ СВЯЗИ--*/
 .modal-feedback	{
 	display: none;
-	position: absolute;
-	top: 1870px;
-	right: 395px;
+	position: fixed;
+	top: 25%;
+	right: 31%;
 	border-radius: 5px;
 	display: none;
 	width: 477px;
@@ -1926,7 +1929,7 @@ min-height: 71px;
 }
 .feedback-form .feedback-name,
 .feedback-form .feedback-email  {
-	width: 251px;
+	width: 252px;
 	height: 42px;
 	border-radius: 15px;
 	margin: 0;
@@ -1942,6 +1945,7 @@ min-height: 71px;
 	font-family: "Roboto", "Tahoma", sans-serif;
 	border-radius: 5px;
 	border: 1px solid #d3d3d2;
+	box-sizing: border-box;
 }
 .feedback-form .feedback-name:hover,
 .feedback-form .feedback-email:hover {
@@ -1952,7 +1956,7 @@ min-height: 71px;
 	border: 2px solid #8fbdec;
 }
 .feedback-form .feedback-text  {
-	width: 412px;
+	width: 413px;
 	height: 141px;
 	border-radius: 15px;
 	margin: 0;
@@ -1968,6 +1972,7 @@ min-height: 71px;
 	font-family: "Roboto", "Tahoma", sans-serif;
 	border-radius: 5px;
 	border: 1px solid #d3d3d2;
+	box-sizing: border-box;
 }
 .feedback-form .feedback-text:hover {
 	border: 2px solid #c7c6c5;
@@ -2141,6 +2146,7 @@ min-height: 71px;
 	display: none;
 	width: 1200px;
 	height: 429px;
+	z-index: 14;
 	margin-top: -280px;
 	margin-left: -609px;
 	border: 7px solid white;
@@ -2151,7 +2157,7 @@ min-height: 71px;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 14;
+  z-index: 13;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
