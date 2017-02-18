@@ -725,6 +725,7 @@ body > input[type="radio"] {
 	line-height: 45px;
 	color: #ffffff;
 	font-weight: 700;
+	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 	font-family: "Roboto", "Tahoma", sans-serif;
 	text-shadow: 1px 1px 3px #5a6762;
 	cursor: pointer;
@@ -1436,9 +1437,11 @@ body > input[type="radio"] {
 	line-height: 45px;
 	color: #ffffff;
 	font-weight: 700;
+	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 	font-family: "Roboto", "Tahoma", sans-serif;
 	text-shadow: 1px 1px 3px #5a6762;
 	cursor: pointer;
+	
 }
 .goods .weight {
 	font-size: 32px;
@@ -1634,7 +1637,7 @@ min-height: 71px;
 .footer-contacts {
 	float: left;
 	width: 334px;
-	margin-left: 210px;
+	margin-left: 212px;
 	text-align: left;
 	margin-top: 15px;
 }
@@ -1695,7 +1698,7 @@ min-height: 71px;
 }
 .footer-copyright p {
 	margin-left: 30px;
-    margin-top: -5px;
+    margin-top: -4px;
 	font-size: 12px;
 	line-height: 18px;
 	color: #ffffff;
