@@ -1855,8 +1855,8 @@ body > input[type="radio"] {
 .modal-feedback	{
 	display: none;
 	position: absolute;
-	top: 500px;
-	right: 295px;
+	top: 1870px;
+	right: 395px;
 	border-radius: 5px;
 	display: none;
 	width: 477px;
@@ -2125,8 +2125,11 @@ body > input[type="radio"] {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 13;
+  z-index: 14;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+}
+.modal-content-show {
+  display: block;
 }

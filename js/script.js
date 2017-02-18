@@ -1,7 +1,21 @@
-var mapOpen = document.querySelector(".btn-feedback");
+var openFeedback = document.querySelector(".btn-feedback");
+var popup = document.querySelector(".modal-feedback");
+var closeFeedback = popup.querySelector(".btn-modal-feedback-close");
+
+    openFeedback.addEventListener("click", function(event) {
+        event.preventDefault();
+    popup.classList.add("modal-content-show");
+      });
+
+    closeFeedback.addEventListener("click", function(event) {
+        event.preventDefault();
+    popup.classList.remove("modal-content-show");
+      });
+	  
+/*var mapOpen = document.querySelector(".js-map-openk");
 var mapPopup = document.querySelector(".modal-map");
 var mapClose = mapPopup.querySelector(".modal-map-close");
-    mapOpen.addEventListener("click", function(event) {
+  mapOpen.addEventListener("click", function(event) {
         event.preventDefault();
     mapPopup.classList.add("modal-content-show");
       });
@@ -17,4 +31,5 @@ var mapClose = mapPopup.querySelector(".modal-map-close");
             mapPopup.classList.remove("modal-content-show");
           }
         }
-      });
+      });*/
+	
