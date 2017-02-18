@@ -1926,7 +1926,7 @@ min-height: 71px;
 }
 .feedback-form .feedback-name,
 .feedback-form .feedback-email  {
-	width: 251px;
+	width: 252px;
 	height: 42px;
 	border-radius: 15px;
 	margin: 0;
@@ -1942,6 +1942,7 @@ min-height: 71px;
 	font-family: "Roboto", "Tahoma", sans-serif;
 	border-radius: 5px;
 	border: 1px solid #d3d3d2;
+	box-sizing: border-box;
 }
 .feedback-form .feedback-name:hover,
 .feedback-form .feedback-email:hover {
