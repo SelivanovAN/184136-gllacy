@@ -1588,10 +1588,10 @@ body > input[type="radio"] {
 	background:  transparent url("../img/ins.png") no-repeat center;
 }
 .social-btn-vk {
-	background:  transparent url("../img/f.png") no-repeat center;
+	background:  transparent url("../img/vk.png") no-repeat center;
 }
 .social-btn-fb {
-	background:  transparent url("../img/vk.png") no-repeat center;
+	background:  transparent url("../img/f.png") no-repeat center;
 }
 .social-btn-tv:hover {
 	background:  transparent url("../img/tv_hover.png") no-repeat center;
