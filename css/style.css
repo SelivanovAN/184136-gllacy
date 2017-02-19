@@ -11,13 +11,17 @@ body {
 .main a:hover,
 .breadcrumbs a:hover, 
 footer a:hover,
-.footer-contacts a:hover {
+.footer-contacts a:hover,
+.catalog-ice-index a,
+.ice-cost-catalog a {
 	color: #ffbc9e;
 }
 .main a:active,
 .breadcrumbs a:active, 
 footer a:active,
-.footer-contacts a:active {
+.footer-contacts a:active,
+.catalog-ice-index a,
+.ice-cost-catalog a  {
 	color: #ffbc9e;
 }
 .clearfix {
@@ -26,6 +30,7 @@ footer a:active,
     clear: both;
 }
 .container {
+	position: relative;
 	width: 1146px;
 	margin: 0 auto;
 	padding: 0 27px;
@@ -379,7 +384,7 @@ min-height: 79px;
 	/*-- ВРЕМЯ --*/
 .timework-tel {
 	position: absolute;
-	margin-left: 971px;
+	right: 27px; /*margin-left: 971px;*/
     top: 78px;
 	margin-top: -9px;
 	width: 175px;
@@ -403,16 +408,13 @@ min-height: 79px;
 
 /*-- БЛОК ХЛЕБНЫХ КРОШЕК--*/
 .breadcrumbs {
-	float: left;
 	width: 300px;
-	height: 20px;
-	margin-top: 20px;
 }
 .bread-main-nav {
     list-style: none;
-	height: 30px;
 	padding: 0;
 	margin: 0;
+    margin-top: 19px;
 }
 .bread-main-nav  li {
 	display: inline-block;
@@ -554,26 +556,26 @@ body > input[type="radio"] {
 .slider-controls label:active {
 	background-color: #ffffff;
 }
-#btn-1:checked ~ .site-wrapper #slide1,
-#btn-2:checked ~ .site-wrapper #slide2,
-#btn-3:checked ~ .site-wrapper #slide3 {
+.btn-radio-one:checked ~ .site-wrapper .slide-one,
+.btn-radio-two:checked ~ .site-wrapper .slide-two,
+.btn-radio-three:checked ~ .site-wrapper .slide-three {
 	display: block;
 }
-#btn-1:checked ~ .site-wrapper {
+.btn-radio-one:checked ~ .site-wrapper {
 	background-color: #849d8f;
 	background-image: url("../img/advertising_1.png");
 }
-#btn-2:checked ~ .site-wrapper {
+.btn-radio-two:checked ~ .site-wrapper {
 	background-color: #8996a6;
 	background-image: url("../img/advertising_2.png");
 }
-#btn-3:checked ~ .site-wrapper {
+.btn-radio-three:checked ~ .site-wrapper {
 	background-color: #9d8b84;
 	background-image: url("../img/advertising_3.png");
 }
-#btn-1:checked ~ .site-wrapper label[for="btn-1"],
-#btn-2:checked ~ .site-wrapper label[for="btn-2"],
-#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+.btn-radio-one:checked ~ .site-wrapper label[for="btn-1"],
+.btn-radio-two:checked ~ .site-wrapper label[for="btn-2"],
+.btn-radio-three:checked ~ .site-wrapper label[for="btn-3"] {
 	background-color: #ffffff;
 }/*-- /СЛАЙДЕР --*/
 	
@@ -693,6 +695,9 @@ body > input[type="radio"] {
 .catalog {	
 	margin-top: 34px;
 }
+.catalog-ice-index {
+	position: relative;
+}
 .catalog .catalog-ice {
 	float: left;
 	width: 293px;
@@ -745,7 +750,7 @@ body > input[type="radio"] {
 	display: block;
     padding-left: 18px;
     padding-right: 18px;
-    margin-top: 7px;
+    margin-top: 6px;
 	text-align: center;
 	font-size: 16px;
 	line-height: 22px;
@@ -806,7 +811,6 @@ body > input[type="radio"] {
 	/*-- БЛОК ОПИСАНИЯ КОМПАНИИ --*/
 .description {
 	width: 1116px;
-	height: 272px;
 	background-image: url("../img/wafer.jpg");
 	background-repeat: no-repeat;
 	padding-top: 24px;
@@ -822,7 +826,7 @@ body > input[type="radio"] {
 .description .make {
 	float: left;
 	width: 545px;
-	height: 180px;
+	height: 189px;
 	margin-top: 22px;
 }
 .description .delivery {
@@ -913,16 +917,14 @@ body > input[type="radio"] {
 	/*-- БЛОК НОВОСТЕЙ И ПОДПИСКА НА РАССЫЛКУ --*/
 .news-sub {
 	width: 1146px;
-	height: 220px;
 	margin-top: 39px;
 	margin-bottom: 40px;
 }
 .news-sub .news {
 	float: left;
 	width: 520px;
-    height: 174px;
     padding-top: 23px;
-    padding-bottom: 23px;
+    padding-bottom: 80px;
     padding-left: 20px;
     padding-right: 20px;
 	border-radius: 15px;
@@ -954,7 +956,6 @@ body > input[type="radio"] {
 .news-sub .sub {
 	float: right;
 	width: 548px;
-    height: 210px;
     padding: 5px 6px;
 	background-image: url("../img/sub.jpg");
 	border-radius: 15px;
@@ -1037,7 +1038,6 @@ body > input[type="radio"] {
 .driving-address .driving {
 	display: inline-block;
 	width: 250px;
-    height: 305px;
     padding: 0 26px;
 	background-color: white;
 	border-radius: 15px;
@@ -1088,8 +1088,8 @@ body > input[type="radio"] {
 	width: 252px;
 	margin-top: 26px;
 	margin-right: 0px;
-	margin-bottom: 30px;
-	padding: 8px 0px;
+	margin-bottom: 31px;
+	padding: 9px 0px;
 	text-align: center;
 	font-size: 18px;
 	line-height: 24px;
@@ -1464,7 +1464,6 @@ body > input[type="radio"] {
 	color: #ffffff;
 	font-weight: 500;
 	font-family: "Roboto", "Tahoma", sans-serif;
-	text-decoration: underline;
 }
 .case-catalog .btn-hover-shadow {
 	position: absolute;

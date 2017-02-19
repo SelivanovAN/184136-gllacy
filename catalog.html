@@ -18,11 +18,11 @@
 			  <ul class="main-nav">
 				<li><a class="active" href="#">Каталог</a>
 					<ul class="sub-menu-catalog">
-							<li><a href="#">Новинки</a></li>
-							<li class="active-page"><a>Сливочное</a></li>
-							<li><a href="#">Щербеты</a></li>
-							<li><a href="#">Фрукторый лед</a></li>
-							<li><a href="#">Мелорин</a></li>
+						<li><a href="#">Новинки</a></li>
+						<li class="active-page"><a>Сливочное</a></li>
+						<li><a href="#">Щербеты</a></li>
+						<li><a href="#">Фрукторый лед</a></li>
+						<li><a href="#">Мелорин</a></li>
 					</ul>
 					</li>
 				<li class="border-li-two"><a class="border-li-one-page" href="#">Доставка и оплата</a></li>
@@ -34,7 +34,7 @@
 					<a class="search" href="#"></a>
 					<div class="modal-search"><!--Форма поиска-->
 						<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-						<input class="search-input" type="search" name="search" placeholder="Что ищем?">
+						<input class="search-input" type="text" name="search" placeholder="Что ищем?">
 						</form>
 					</div><!--/Форма поиска-->
 				</div>
@@ -56,8 +56,8 @@
 					<a class="basket-bye-ice" href="#">2 товара</a>
 						<div class="order-in-basket">
 							<form>
-							<p class="order-page"><img src="./img/check_off_order.png" width="10" height="10" class="order-bnt-cancel" alt="Иконка удаления мороженого"><img src="./img/ice_order_one.png" width="33" height="33" class="order-img-ice" alt="Иконка заказанного мороженого"><span class="order-name-ice">Пломбир с апельсиновым джемом</span> 1,5 кг х <span class="order-price-ice">200 руб.</span> 300 руб.</p>
-							<p class="order-page"><img src="./img/check_off_order.png" width="10" height="10" class="order-bnt-cancel" alt="Иконка удаления мороженого"><img src="./img/ice_order_two.png" width="33" height="33" class="order-img-ice" alt="Иконка заказанного мороженого"><span class="order-name-ice">Клубничный пломбир с присыпкой из белого шоколада</span> 1,5 кг х <span class="order-price-ice">300 руб.</span> 450 руб.</p>
+							<p class="order-page"><img class="order-bnt-cancel" src="./img/check_off_order.png" width="10" height="10" alt="Иконка удаления мороженого"><img class="order-img-ice" src="./img/ice_order_one.png" width="33" height="33" alt="Иконка заказанного мороженого"><span class="order-name-ice">Пломбир с апельсиновым джемом</span> 1,5 кг х <span class="order-price-ice">200 руб.</span> 300 руб.</p>
+							<p class="order-page"><img class="order-bnt-cancel" src="./img/check_off_order.png" width="10" height="10" alt="Иконка удаления мороженого"><img class="order-img-ice" src="./img/ice_order_two.png" width="33" height="33" alt="Иконка заказанного мороженого"><span class="order-name-ice">Клубничный пломбир с присыпкой из белого шоколада</span> 1,5 кг х <span class="order-price-ice">300 руб.</span> 450 руб.</p>
 							<hr>
 							<p class="order-all-price">Итого: 750 руб.</p>
 								<button class="btn-make-order" type="submit" title="Оформить заказ">Оформить заказ</button>
@@ -84,9 +84,8 @@
 	</div><!--/Блок хлебных крошек-->
 	<!--Блок выбора мороженных - фильтр-->
 	<div class="selection-ice clearfix">
-
 		<h2>Сливочное мороженое</h2>
-		<form action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
+		<form class="clearfix" action="https://echo.htmlacademy.ru" method="get" enctype="multipart/form-data" oninput="ruoutput.value=rucount.value">
 			<div class="sorting">
 				<label class="choice" for="sorting">Сортировка:</label><br>
 				<select name="sorting" id="sorting">
@@ -112,10 +111,10 @@
 			<div class="fatness"><!--Жирность-->
 				<span class="choice-fatness">Жирность:</span><br>
 				<section class="radiobox">
-					<input type="radio" name="check-0" id="0" value="0"><label class="meaning" for="0">0%</label>
-					<input type="radio" name="check-10" id="10" value="10" checked><label class="meaning" for="10">до 10%</label>
-					<input type="radio" name="check-30" id="30" value="30"><label class="meaning" for="30">до 30%</label>
-					<input type="radio" name="check-all" id="50" value="50"><label class="meaning" for="50">выше 30%</label>
+					<input type="radio" name="fatness-ice" id="0" value="0"><label class="meaning" for="0">0%</label>
+					<input type="radio" name="fatness-ice" id="10" value="10" checked><label class="meaning" for="10">до 10%</label>
+					<input type="radio" name="fatness-ice" id="30" value="30"><label class="meaning" for="30">до 30%</label>
+					<input type="radio" name="fatness-ice" id="50" value="50"><label class="meaning" for="50">выше 30%</label>
 				</section>
 			</div>
 			<div class="fillers"><!--Наполнители-->
@@ -130,11 +129,10 @@
 			</div>
 			<a class="btn-apply" href="#">Применить</a>
 		</form>
-	<!--/Блок выбора мороженных-->
-	</div>
+	</div><!--/Блок выбора мороженных-->
 	<!--Блок ассортимента мороженных-->
 	<div class="goods clearfix">
-			<div class="case-catalog">
+			<div class="case-catalog clearfix">
 				<div class="ice-cost-catalog">
 				<img src="img/ice_1.jpg" width="267" height="267" class="big-ice" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 				<span class="cost">310<span class="weight"><img src="img/rur.png" width="27" height="32" alt="Символ рубля">/кг</span></span>
@@ -265,9 +263,7 @@
 					<li><a class="next" href="#next">Вперёд</a></li>
 				</ul>
 			</div>
-	<!--/Блок ассортимента мороженных-->
-	
-	</div>
+	</div><!--/Блок ассортимента мороженных-->
 	</main>
 	<!--Блок подвала-->
 	<footer class="footer-catalog">
@@ -287,7 +283,7 @@
 				</ul>
 			</section>
 			<section class="footer-copyright">
-				<a class="btn-copyright" href="https://htmlacademy.ru"><img src="img/made_footer.png" width="108" height="38" class="big-ice" alt="Эмблема HTML Academy"></a>
+				<a class="btn-copyright" href="https://htmlacademy.ru"><img class="big-ice" src="img/made_footer.png" width="108" height="38"  alt="Эмблема HTML Academy"></a>
 				<!--<a class="btn-copyright" href="https://htmlacademy.ru">HTML Academy</a>-->
 				<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
 			</section>
@@ -307,7 +303,6 @@
 		</section>
     </div><!--Форма входа-->
 		<!--Форма наличия товара в корзине-->
-	<script src="js/jquery.js"></script>
 	<script src="js/script.js"></script>
   </body>
 </html>
