@@ -30,6 +30,7 @@ footer a:active,
     clear: both;
 }
 .container {
+	position: relative;
 	width: 1146px;
 	margin: 0 auto;
 	padding: 0 27px;
@@ -383,7 +384,7 @@ min-height: 79px;
 	/*-- ВРЕМЯ --*/
 .timework-tel {
 	position: absolute;
-	margin-left: 971px;
+	right: 27px; /*margin-left: 971px;*/
     top: 78px;
 	margin-top: -9px;
 	width: 175px;
