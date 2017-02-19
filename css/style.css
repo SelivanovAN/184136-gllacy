@@ -1149,9 +1149,6 @@ body > input[type="radio"] {
 	font-weight: 500;
 	font-family: "Roboto", "Tahoma", sans-serif;
 }
-.selection-ice form {
-	height: 138px;
-}
 	/*-- СОРТИРОВКА --*/
 .sorting {
 	float: left;
