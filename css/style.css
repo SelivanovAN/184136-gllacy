@@ -297,7 +297,7 @@ footer a:active,
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 500;
-	color: #000000;
+	color: #323232;
 	font-family: "Roboto", "Tahoma", sans-serif;
 	vertical-align: top;	
 }
@@ -1150,13 +1150,7 @@ body > input[type="radio"] {
 	font-weight: 500;
 	font-family: "Roboto", "Tahoma", sans-serif;
 }
-.selection-ice .meaning {
-	font-size: 16px;
-	line-height: 18px;
-	color: #ffffff;
-	font-weight: 500;
-	font-family: "Roboto", "Tahoma", sans-serif;
-}
+
 	/*-- СОРТИРОВКА --*/
 .sorting {
 	float: left;
@@ -1211,6 +1205,7 @@ body > input[type="radio"] {
 	outline: none;
 	border: none;
 }/*-- /СОРТИРОВКА --*/
+	
 	/*-- ФИЛЬТРЫ --*/
 .price-ice {
 	float: left;
@@ -1285,6 +1280,13 @@ body > input[type="radio"] {
 	width: 415px;
 	height: 57px;
 }
+.radiobox .meaning {
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+	font-weight: 500;
+	font-family: "Roboto", "Tahoma", sans-serif;
+}
 .fatness span {
 	margin-left: 18px;
 	font-size: 14px;
@@ -1309,12 +1311,12 @@ body > input[type="radio"] {
 .radiobox input[type="radio"] + label {
 	position: relative;
 	padding-left: 31px;
-	line-height: 20px;
+	line-height: 18px;
 	font-size: 16px;
 	display: inline-block;
 	vertical-align: top;
 	cursor: pointer;
-	margin-top: 11px;
+	margin-top: 10px;
 	margin-right: 15px;
 }
 .radiobox input[type="radio"] + label:last-child {
@@ -1345,6 +1347,13 @@ body > input[type="radio"] {
 	height: 57px;
 	margin-right: 14px;
 	margin-top: 17px;
+}
+.checkbox .meaning {
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+	font-weight: 500;
+	font-family: "Roboto", "Tahoma", sans-serif;
 }
 .fillers span {
 	margin-left: 16px;
@@ -1400,14 +1409,14 @@ body > input[type="radio"] {
 	margin-top: 43px;
 	display: inline-block;
 	vertical-align: top;
-	padding: 8px 27px;
+	padding: 7px 27px;
 	text-decoration: none;
-	border: 2px solid #ffffff;
+	border: 2px solid #fcfcfc;
 	border-radius: 100px;
 	text-align: center;
 	font-size: 16px;
 	line-height: 18px;
-	color: #ffffff;
+	color: #fcfcfc;
 	font-weight: 500;
 	font-family: "Roboto", "Tahoma", sans-serif;
 	background: #9db1a5;
@@ -1459,6 +1468,9 @@ body > input[type="radio"] {
 	font-family: "Roboto", "Tahoma", sans-serif;
 	text-shadow: 1px 1px 3px #5a6762;
 	cursor: pointer;
+}
+.case-catalog:nth-child(12) .cost {
+	bottom: 44px;
 }
 .goods .weight {
 	font-size: 32px;
@@ -1541,7 +1553,7 @@ body > input[type="radio"] {
 	/*-- ПЕРЕКЛЮЧАТЕЛЬ СТРАНИЦ --*/
 .goods .catalog-pages {
 	float: right;
-	margin-top: 52px;
+	margin-top: 71px;
 }
 .pages-ices {
 	margin: 0;
@@ -1572,7 +1584,7 @@ body > input[type="radio"] {
 	color: #000000;
 }
 .catalog-pages  .hover:hover {
-	color: #000000;
+	color: #ffffff;
 	background: #9db1a5;
 }
 .prev {
@@ -1592,6 +1604,7 @@ footer {
 	padding-top: 19px;
 	border-top: 1px solid #a9bbb1;
 }
+	
 	/*-- СОЦИАЛЬНЫЕ КНОПКИ --*/
 .footer-social {
 	float: left;
@@ -1673,10 +1686,13 @@ footer {
 	display: block;
 	padding-left: 22px;
 	font-size: 13px;
-	line-height: 18px;
+	line-height: 16px;
 	color: #ffffff;
 	font-weight: 400;
 	font-family: "Roboto", "Tahoma", sans-serif;
+}
+.footer-main li:first-child a {
+	font-weight: 500;
 }
 .footer-main li:nth-child(2)  a  {
 	padding-right: 0px;
@@ -1714,9 +1730,9 @@ footer {
 }
 .footer-copyright p {
 	margin-left: 30px;
-	margin-top: -4px;
+	margin-top: -2px;
 	font-size: 12px;
-	line-height: 18px;
+	line-height: 16px;
 	color: #fefefe;
 	font-weight: 400;
 	font-family: "Roboto", "Tahoma", sans-serif;
@@ -1724,7 +1740,7 @@ footer {
 }
 .footer-copyright a {
 	font-size: 12px;
-	line-height: 18px;
+	line-height: 16px;
 	color: #fefefe;
 	font-weight: 400;
 	font-family: "Roboto", "Tahoma", sans-serif;
