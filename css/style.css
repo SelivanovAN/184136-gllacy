@@ -218,7 +218,6 @@ footer a:active,
 .active-page-index {
 	background-color: #fbded7;
 }
-	
 .user-block {
 	float: right;
 	max-width: 428px;
@@ -1906,27 +1905,15 @@ footer {
 	cursor: pointer;
 	outline: none;
 }
-.btn-modal-feedback-close::before,
-.btn-modal-feedback-close::after {
+.btn-modal-feedback-close::before {
 	content: "";
+	display: block;
+	width: 18px;
+	height: 17px;
+	background: transparent url("../img/close_feedback.png") no-repeat;
 	position: absolute;
 	top: 7px;
 	left: 1px;
-	width: 17px;
-	height: 1px;
-	background-color: #000000;
-	border-radius: 1px;
-	font-size: 24px;
-	line-height: 28px;
-	color: #000000;
-	font-weight: 400;
-	font-family: "Roboto", "Tahoma", sans-serif;
-}
-.btn-modal-feedback-close::before {
-	transform: rotate(45deg);
-}
-.btn-modal-feedback-close::after {
-	transform: rotate(-45deg);
 }
 .modal-feedback h2 {
 	margin-top: 18px;
