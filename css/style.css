@@ -9,16 +9,18 @@ body {
 }
 .main a:hover,
 .breadcrumbs a:hover, 
-footer a:hover,
+.footer-main a:hover,
 .footer-contacts a:hover,
+.footer-copyright a:hover,
 .catalog-ice-index a,
 .ice-cost-catalog a {
 	color: #ffbc9e;
 }
 .main a:active,
 .breadcrumbs a:active, 
-footer a:active,
+.footer-main a:active,
 .footer-contacts a:active,
+.footer-copyright a:hover,
 .catalog-ice-index a,
 .ice-cost-catalog a  {
 	color: #ffbc9e;
@@ -465,7 +467,7 @@ footer a:active,
 	font-family: "Roboto", "Tahoma", sans-serif;
 	background-color: #849d8f;
 }
-body > input[type="radio"] {
+body .input-invisible {
 	display: none;
 }
 .site-wrapper::before,
@@ -598,12 +600,10 @@ body > input[type="radio"] {
 	margin-right: 0;
 }
 .promo .promo-action:first-child {
-	background-image: url("../img/promo_raspberries.jpg");
-	background-repeat: no-repeat;
+	background: #631424 url("../img/promo_raspberries.jpg") no-repeat;
 }
 .promo .promo-action:last-child {
-	background-image: url("../img/promo_choko.jpg");
-	background-repeat: no-repeat;
+	background: #3d2419 url("../img/promo_choko.jpg") no-repeat;
 }
 .promo-action span {
 	display: block;
@@ -814,8 +814,7 @@ body > input[type="radio"] {
 	/*-- БЛОК ОПИСАНИЯ КОМПАНИИ --*/
 .description {
 	width: 1116px;
-	background-image: url("../img/wafer.jpg");
-	background-repeat: no-repeat;
+	background: #eadcc0 url("../img/wafer.jpg") no-repeat;
 	padding-top: 24px;
 	padding-left: 20px;
 	padding-right: 10px;
@@ -932,8 +931,7 @@ body > input[type="radio"] {
 	padding-left: 20px;
 	padding-right: 20px;
 	border-radius: 15px;
-	background-image: url("../img/news.jpg");
-	background-repeat: no-repeat;
+	background: #fbefed url("../img/news.jpg") no-repeat;
 	z-index: 1;
 }
 .news-sub .news p {
@@ -961,7 +959,7 @@ body > input[type="radio"] {
 	float: right;
 	width: 548px;
 	padding: 5px 6px;
-	background-image: url("../img/sub.jpg");
+	background: #f8f7f4 url("../img/sub.jpg");
 	border-radius: 15px;
 }
 .sub .white-layer {
@@ -1036,8 +1034,7 @@ body > input[type="radio"] {
 	min-width: 1200px;
 	min-height: 430px;
 	margin-bottom: 19px;
-	background-image: url("../img/map.jpg");
-	background-repeat: no-repeat;
+	background: #849d8f url("../img/map.jpg");
 }
 .driving-address .driving {
 	display: inline-block;
@@ -1049,6 +1046,7 @@ body > input[type="radio"] {
 	left: 870px;
 	bottom: -62px;
 	vertical-align: top;
+	z-index: 15;
 }
 .driving  .line-1,
 .driving  .line-2 {
@@ -1552,19 +1550,18 @@ body > input[type="radio"] {
 }
 
 	/*-- ПЕРЕКЛЮЧАТЕЛЬ СТРАНИЦ --*/
-.goods .catalog-pages {
-	float: right;
-	margin-top: 71px;
-}
 .pages-ices {
+	float: right;
 	margin: 0;
 	padding: 0;
 	margin-right: -9px;
+	margin-top: 71px;
 }
-.goods .catalog-pages li {
+.pages-ices li {
 	display: inline-block;
+	vertical-align: top;
 }
-.catalog-pages  a {	
+.pages-ices  a {	
 	display: block;
 	margin-left: -1px;
 	min-width: 27px;
@@ -1580,11 +1577,11 @@ body > input[type="radio"] {
 	border-radius: 100px;
 	cursor: pointer;
 }
-.catalog-pages .active-page {
+.pages-ices .active-page {
 	background-color: #ffffff;
 	color: #000000;
 }
-.catalog-pages  .hover:hover {
+.pages-ices  .hover:hover {
 	color: #ffffff;
 	background: #9db1a5;
 }
@@ -1598,7 +1595,9 @@ body > input[type="radio"] {
 }/*-- /БЛОК АССОРТИМЕНТА МОРОЖЕННЫХ --*/ /*-- /СТРАНИЦА CATALOG --*/
 
 /*-- ПОДВАЛ --*/
-footer {
+.footer-social,
+.footer-contacts,
+.footer-copyrigh {
 	min-height: 71px;
 }
 .footer-catalog .border {
@@ -2159,14 +2158,14 @@ footer {
 }
 	
 	/*-- КАРТА И ОВЕРЛЭЙ ОБРАТНОЙ СВЯЗИ--*/
-.modal-map {
+/*.modal-map {
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	display: none;
 	width: 1200px;
-	height: 429px;
-	z-index: 14;
+	height: 430px;
+	z-index: 20;
 	margin-top: -280px;
 	margin-left: -609px;
 	border: 7px solid white;
@@ -2174,6 +2173,7 @@ footer {
 	background: #849d8f url("../img/map.jpg");
 }
 .map-overlay {
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -2181,7 +2181,7 @@ footer {
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.5);
-}
+}*/
 .modal-content-show {
 	display: block;
 	animation: bonuce 0.6s;
